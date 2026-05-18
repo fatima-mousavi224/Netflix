@@ -1,0 +1,76 @@
+{
+  "Footer": {
+    "audioDescription": "Audiobeschreibung",
+    "investorRelations": "Investor Relations",
+    "privacy": "Datenschutz",
+    "contactUs": "Kontakt",
+    "helpCenter": "Hilfe-Center",
+    "jobs": "Jobs",
+    "legalNotices": "Rechtliche Hinweise",
+    "doNotSell": "Meine persönlichen Daten nicht verkaufen oder teilen",
+    "giftCards": "Geschenkkarten",
+    "netflixShop": "Netflix-Shop",
+    "cookiePreferences": "Cookie-Einstellungen",
+    "adChoices": "Werbeauswahl",
+    "mediaCenter": "Medienzentrum",
+    "termsOfUse": "Nutzungsbedingungen",
+    "corporateInformation": "Impressum",
+    "serviceCode": "Service-Code",
+    "questionsCall": "Fragen? Rufen Sie an unter",
+    "fqa": "Häufig gestellte Fragen (FAQ)",
+    "buyGiftCards": "Geschenkkarten kaufen",
+    "waysToWatch": "Unterstützte Geräte",
+    "onlyOnNetflix": "Nur auf Netflix",
+    "account": "Konto",
+    "redeemGiftCards": "Geschenkkarten einlösen",
+    "speedTest": "Geschwindigkeitstest"
+  },
+  "Navbar": {
+  "home": "Startseite",
+  "tvShows": "Serien",
+  "movies": "Filme",
+  "newPopular": "Neu und beliebt",
+  "myList": "Meine Liste",
+  "browseLanguages": "Nach Sprachen durchsuchen",
+  "signIn": "Einloggen"
+},
+"Hero": {
+  "title": "Unbegrenzt Filme, Serien und mehr",
+  "subtitle": "Überall streamen. Jederzeit kündigen.",
+  "description": "Bereit zum Streamen? Geben Sie Ihre E-Mail-Adresse ein, um Ihre Mitgliedschaft zu beginnen oder zu reaktivieren."
+},
+"HeroForm": {
+  "emailPlaceholder": "E-Mail-Adresse",
+  "getStarted": "Loslegen"
+},
+"PromoBanner": {
+  "title": "Das Netflix, das Sie lieben, für nur 6,99 $.",
+  "subtitle": "Holen Sie sich das Standard-Abo mit Werbung.",
+  "learnMore": "Mehr erfahren"
+},
+"Features": {
+  "s1Title": "Auf dem Fernseher genießen",
+  "s1Desc": "Streamen Sie auf Smart-TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray-Playern und mehr.",
+  "s2Title": "Überall ansehen",
+  "s2Desc": "Unbegrenzt Filme und Serien auf Smartphone, Tablet, Laptop und Fernseher streamen.",
+  "s3Title": "Profile für Kinder erstellen",
+  "s3Desc": "Schicken Sie Kinder auf Abenteuer mit ihren Lieblingsfiguren in einem eigenen Bereich – kostenlos mit Ihrer Mitgliedschaft.",
+  "s4Title": "Inhalte herunterladen und offline ansehen",
+  "s4Desc": "Egal ob im Flugzeug, Zug oder U-Boot..."
+},
+"FAQ": {
+  "title": "Häufig gestellte Fragen",
+  "q1": "Was ist Netflix?",
+  "a1": "Netflix ist ein Streaming-Dienst, der eine große Auswahl an preisgekrönten Serien, Filmen, Animes, Dokumentationen und mehr auf Tausenden von internetfähigen Geräten anbietet.",
+  "q2": "Wie viel kostet Netflix?",
+  "a2": "Genießen Sie Netflix auf Ihrem Smartphone, Tablet, Smart-TV, Laptop oder Streaming-Gerät – alles zu einem monatlichen Festpreis.",
+  "q3": "Wo kann ich Netflix ansehen?",
+  "a3": "Schauen Sie überall und jederzeit. Loggen Sie sich mit Ihrem Netflix-Konto ein, um direkt auf netflix.com von Ihrem Computer oder auf jedem internetfähigen Gerät zu streamen.",
+  "q4": "Wie kündige ich?",
+  "a4": "Netflix ist flexibel. Es gibt keine lästigen Verträge oder Verpflichtungen. Sie können Ihr Konto ganz einfach online mit nur zwei Klicks kündigen. Es fallen keine Kündigungsgebühren an.",
+  "q5": "Was kann ich auf Netflix ansehen?",
+  "a5": "Netflix verfügt über eine umfangreiche Bibliothek von Spielfilmen, Dokumentationen, Serien, Animes, preisgekrönten Netflix-Originalen und mehr. Schauen Sie so viel Sie wollen, wann immer Sie wollen.",
+  "q6": "Ist Netflix für Kinder geeignet?",
+  "a6": "Das Netflix Kids-Erlebnis ist in Ihrer Mitgliedschaft enthalten. So behalten Eltern die Kontrolle, während Kinder familienfreundliche Serien und Filme in einem eigenen Bereich genießen können."
+}
+}
