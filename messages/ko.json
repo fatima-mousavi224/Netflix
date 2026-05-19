@@ -86,5 +86,23 @@
   "learnMore": "자세히 알아보기.",
   "emailError": "올바른 이메일 주소 또는 전화번호를 입력하세요.",
   "passwordError": "비밀번호는 4자에서 60자 사이여야 합니다."
-}
+},
+
+  "Billboard": {
+    "play": "재생",
+    "moreInfo": "상세 정보"
+  },
+  "MovieRows": {
+    "matched": "회원님을 위한 추천 콘텐츠",
+    "nowOnNetflix": "지금 Netflix에서 시청 가능",
+    "top10": "오늘 미국의 TOP 10 영화",
+    "thinkYouLove": "취향저격 콘텐츠",
+    "animation": "애니메이션",
+    "action": "감동과 액션이 있는 영화",
+    "continueWatching": "James님이 시청 중인 콘텐츠",
+    "weekend": "이번 주말 추천 콘텐츠",
+    "acclaimed": "평단의 찬사를 받은 영화",
+    "freshPicks": "오늘의 새로운 선택"
+  }
+
 }

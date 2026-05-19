@@ -86,4 +86,22 @@
   "learnMore": "Más información.",
   "emailError": "Introduce un correo electrónico o un número de teléfono válido.",
   "passwordError": "La contraseña debe tener entre 4 y 60 caracteres."
-}}
+},
+
+  "Billboard": {
+    "play": "Reproducir",
+    "moreInfo": "Más información"
+  },
+  "MovieRows": {
+    "matched": "Compatibles contigo",
+    "nowOnNetflix": "Novedades en Netflix",
+    "top10": "Las 10 películas más vistas hoy",
+    "thinkYouLove": "Creemos que te encantarán",
+    "animation": "Animación",
+    "action": "Acción y películas inspiradoras",
+    "continueWatching": "Continuar viendo como James",
+    "weekend": "Para ver en un fin de semana",
+    "acclaimed": "Películas aclamadas por la crítica",
+    "freshPicks": "Selecciones frescas de hoy"
+  }
+}

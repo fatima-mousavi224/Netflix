@@ -124,7 +124,7 @@ const HomePageFooter = () => {
   const t = useTranslations("Footer");
 
   return (
-    <section className="bg-grey-850 text-grey-200 lg:px-40 md:px-20 px-8 md:py-18 py-8 gap-12">
+    <section className="bg-primary-black text-grey-200 lg:px-40 md:px-20 px-8 md:pb-18 pb-8 gap-12">
       <div className="flex gap-8 pb-6">
         <Image
           src="/icons/facebook.svg"

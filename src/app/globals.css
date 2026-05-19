@@ -88,3 +88,10 @@
   --text-bold-t1: 48px;
   --text-bold-xl: 55px;
 }
+
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 2px #404040; /* رنگ خاکستری تیره دور واژه‌ها */
+    color: transparent !important; /* توخالی کردن داخل عدد */
+  }
+}

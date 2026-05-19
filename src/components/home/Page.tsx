@@ -7,7 +7,7 @@ import Secction2 from "./Secction2"
 import Secction3 from "./Secction3"
 import Secction4 from "./Secction4"
 
-function Page() {
+function LandingPage() {
   return (
     <div>
       <HeroSection />
@@ -22,4 +22,4 @@ function Page() {
   )
 }
 
-export default Page
+export default LandingPage

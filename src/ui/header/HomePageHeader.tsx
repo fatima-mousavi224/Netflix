@@ -193,10 +193,8 @@ const HomePageHeader = () => {
   const locale = useLocale();
   const router = useRouter();
   
-  // ۳. دریافت دیتای پروفایل فعلی
   const { activeProfile } = useProfile();
   
-  // مدیریت وضعیت باز و بسته بودن منوی پروفایل
   const [showDropdown, setShowDropdown] = useState(false);
 
   const LinkItems = [
@@ -209,7 +207,7 @@ const HomePageHeader = () => {
   ];
 
   return (
-    <section className="bg-grey-850 lg:px-22.5 md:px-16 px-6 md:py-8 py-4 relative z-50">
+    <section className="bg-black/50 lg:px-22.5 md:px-16 px-6 md:py-6 py-4 relative z-50">
       <div className="flex justify-between items-center">
         
         <div className="flex gap-8 items-center">
@@ -221,7 +219,7 @@ const HomePageHeader = () => {
             className="object-contain"
           />
           
-          <div className="hidden md:flex gap-5 text-grey-10 text-reg-sb">
+          <div className="hidden md:flex gap-5 text-primary-white text-reg-sb">
             {LinkItems.map((link) => {
               const isActive = pathname === link.href;
               return (
@@ -243,16 +241,15 @@ const HomePageHeader = () => {
           <Search size={18} className="cursor-pointer hover:text-grey-10" />
           <Bell size={18} className="cursor-pointer hover:text-grey-10" />
           
-          {/* ---- بخش مدیریت پروفایل فعال واقعی ---- */}
           <div 
             className="relative flex items-center gap-2 cursor-pointer group"
             onMouseEnter={() => setShowDropdown(true)}
             onMouseLeave={() => setShowDropdown(false)}
             onClick={() => setShowDropdown(!showDropdown)}
           >
-            <div className="relative w-[25px] h-[25px] rounded overflow-hidden bg-red-600 flex items-center justify-center text-[10px] font-bold">
+            <div className="relative w-6.25 h-6.25 rounded overflow-hidden bg-red-600 flex items-center justify-center text-[10px] font-bold">
               {activeProfile?.avatar ? (
-                // نمایش تصویر واقعی گوگلِ پروفایل فعال
+                
                 <Image
                   src={activeProfile.avatar}
                   alt={activeProfile.name}
@@ -260,7 +257,6 @@ const HomePageHeader = () => {
                   className="object-cover"
                 />
               ) : (
-                // در صورت عدم وجود تصویر، حرف اول نام کاربری
                 <span>{activeProfile?.name?.[0] || "U"}</span>
               )}
             </div>
@@ -272,11 +268,9 @@ const HomePageHeader = () => {
               }`} 
             />
 
-            {/* منوی بازشوی کشویی پروفایل (Style کاملا مشابه نتفلیکس) */}
             {showDropdown && (
               <div className="absolute top-full right-0 mt-2 w-44 bg-black/95 border border-grey-800 rounded shadow-xl flex flex-col py-2 text-sm animate-fade-in">
                 
-                {/* دکمه بازگشت به صفحه تعویض پروفایل */}
                 <button
                   onClick={() => router.push("/profiles")}
                   className="flex items-center gap-2 px-4 py-2 hover:bg-grey-800/50 text-grey-10 hover:text-primary-white transition-colors w-full text-left"
@@ -287,7 +281,6 @@ const HomePageHeader = () => {
 
                 <div className="border-t border-grey-800 my-1"></div>
 
-                {/* دکمه خروج کامل از حساب گوگل */}
                 <button
                   onClick={() => signOut({ callbackUrl: `/${locale}/signin` })}
                   className="flex items-center gap-2 px-4 py-2 hover:bg-red-600/20 text-primary-red transition-colors w-full text-left font-medium"
@@ -299,7 +292,6 @@ const HomePageHeader = () => {
             )}
           </div>
 
-          {/* منوی موبایل */}
           <div className="md:hidden block">
             <Sheet>
               <SheetTrigger asChild>
@@ -308,7 +300,7 @@ const HomePageHeader = () => {
                 </button>
               </SheetTrigger>
               
-              <SheetContent side="right" className="bg-grey-850 border-grey-800 text-primary-white w-[250px] p-6">
+              <SheetContent side="right" className="bg-grey-850 border-grey-800 text-primary-white w-62.5 p-6">
                 <SheetTitle className="sr-only">Mobile Navigation Menu</SheetTitle>
                 <div className="flex flex-col gap-6 mt-8">
                   <Image

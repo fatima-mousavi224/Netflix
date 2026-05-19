@@ -26,65 +26,82 @@
     "speedTest": "Hız Testi"
   },
   "Navbar": {
-  "home": "Ana Sayfa",
-  "tvShows": "Diziler",
-  "movies": "Filmler",
-  "newPopular": "Yeni ve Popüler",
-  "myList": "Listem",
-  "browseLanguages": "Dile Göre Göz At",
-  "signIn": "Oturum Aç"
-},
-"Hero": {
-  "title": "Sınırsız film, dizi ve çok daha fazlası",
-  "subtitle": "İstediğiniz yerde izleyin. İstediğiniz zaman iptal edin.",
-  "description": "İzlemeye hazır mısınız? Üyelik oluşturmak veya üyeliğinizi yenilemek için e-posta adresinizi girin."
-},
-"HeroForm": {
-  "emailPlaceholder": "E-posta adresi",
-  "getStarted": "Başlayın"
-},
-"PromoBanner": {
-  "title": "Sevdiğiniz Netflix sadece 6,99 $.",
-  "subtitle": "Reklamlı Standart planı edinin.",
-  "learnMore": "Daha Fazla Bilgi"
-},
-"Features": {
-  "s1Title": "Televizyonunuzda keyfini çıkarın",
-  "s1Desc": "Akıllı TV, Playstation, Xbox, Chromecast, Apple TV, Blu-ray oynatıcılar ve daha fazlasında izleyin.",
-  "s2Title": "İstediğiniz yerde izleyin",
-  "s2Desc": "Telefon, tablet, dizüstü bilgisayar ve televizyonunuzda sınırsız film ve dizi izleyin.",
-  "s3Title": "Çocuklar için profil oluşturun",
-  "s3Desc": "Üyeliğinize dahil olan ücretsiz özel alanda çocukları en sevdikleri karakterlerle maceralara gönderin.",
-  "s4Title": "Çevrimdışı izlemek için içerikleri indirin",
-  "s4Desc": "Uçakta, trende veya bir denizaltıda izleyin..."
-},
-"FAQ": {
-  "title": "Sıkça Sorulan Sorular",
-  "q1": "Netflix nedir?",
-  "a1": "Netflix; internete bağlı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve çok daha fazlasını sunan bir yayın hizmetidir.",
-  "q2": "Netflix'in maliyeti nedir?",
-  "a2": "Netflix'i akıllı telefonunuz, tabletiniz, Akıllı TV'niz, dizüstü bilgisayarınız veya yayın cihazınızda tek bir sabit aylık ücretle izleyin.",
-  "q3": "Nerede izleyebilirim?",
-  "a3": "İstediğiniz yerde, istediğiniz zaman izleyin. Bilgisayarınızdan netflix.com adresinden web üzerinde veya internete bağlı herhangi bir cihazda Netflix hesabınızla oturum açarak anında izleyin.",
-  "q4": "Nasıl iptal ederim?",
-  "a4": "Netflix esnektir. Can sıkıcı sözleşmeler ve taahhütler yoktur. Hesabınızı çevrimiçi olarak iki tıklamayla kolayca iptal edebilirsiniz. İptal ücreti yoktur.",
-  "q5": "Netflix'te ne izleyebilirim?",
-  "a5": "Netflix; uzun metrajlı filmler, belgeseller, diziler, animeler, ödüllü Netflix orijinal içerikleri ve daha fazlasından oluşan kapsamlı bir kütüphaneye sahiptir. İstediğiniz kadar, istediğiniz zaman izleyin.",
-  "q6": "Netflix çocuklar için uygun mu?",
-  "a6": "Üyeliğinize dahil olan Netflix Çocuk deneyimi, çocuklar kendi alanlarında aile dostu dizilerin ve filmlerin keyfini çıkarırken ebeveynlere kontrol imkanı sağlar."
-},
-"Auth": {
-  "signIn": "Oturum Aç",
-  "emailOrPhone": "E-posta veya telefon numarası",
-  "password": "Parola",
-  "googleLogin": "Google ile Devam Et",
-  "forgot": "Parolayı mı unuttunuz?",
-  "rememberMe": "Beni hatırla",
-  "newToNetflix": "Netflix'e katılmak ister misiniz?",
-  "signUpNow": "Şimdi kaydolun.",
-  "captchaText": "Bu sayfa, robot olmadığınızı doğrulamak için Google reCAPTCHA tarafından korunmaktadır.",
-  "learnMore": "Daha fazla bilgi edinin.",
-  "emailError": "Lütfen geçerli bir e-posta adresi veya telefon numarası girin.",
-  "passwordError": "Parolanız 4 ila 60 karakter arasında olmalıdır."
-}
+    "home": "Ana Sayfa",
+    "tvShows": "Diziler",
+    "movies": "Filmler",
+    "newPopular": "Yeni ve Popüler",
+    "myList": "Listem",
+    "browseLanguages": "Dile Göre Göz At",
+    "signIn": "Oturum Aç"
+  },
+  "Hero": {
+    "title": "Sınırsız film, dizi ve çok daha fazlası",
+    "subtitle": "İstediğiniz yerde izleyin. İstediğiniz zaman iptal edin.",
+    "description": "İzlemeye hazır mısınız? Üyelik oluşturmak veya üyeliğinizi yenilemek için e-posta adresinizi girin."
+  },
+  "HeroForm": {
+    "emailPlaceholder": "E-posta adresi",
+    "getStarted": "Başlayın"
+  },
+  "PromoBanner": {
+    "title": "Sevdiğiniz Netflix sadece 6,99 $.",
+    "subtitle": "Reklamlı Standart planı edinin.",
+    "learnMore": "Daha Fazla Bilgi"
+  },
+  "Features": {
+    "s1Title": "Televizyonunuzda keyfini çıkarın",
+    "s1Desc": "Akıllı TV, Playstation, Xbox, Chromecast, Apple TV, Blu-ray oynatıcılar ve daha fazlasında izleyin.",
+    "s2Title": "İstediğiniz yerde izleyin",
+    "s2Desc": "Telefon, tablet, dizüstü bilgisayar ve televizyonunuzda sınırsız film ve dizi izleyin.",
+    "s3Title": "Çocuklar için profil oluşturun",
+    "s3Desc": "Üyeliğinize dahil olan ücretsiz özel alanda çocukları en sevdikleri karakterlerle maceralara gönderin.",
+    "s4Title": "Çevrimdışı izlemek için içerikleri indirin",
+    "s4Desc": "Uçakta, trende veya bir denizaltıda izleyin..."
+  },
+  "FAQ": {
+    "title": "Sıkça Sorulan Sorular",
+    "q1": "Netflix nedir?",
+    "a1": "Netflix; internete bağlı binlerce cihazda ödüllü diziler, filmler, animeler, belgeseller ve çok daha fazlasını sunan bir yayın hizmetidir.",
+    "q2": "Netflix'in maliyeti nedir?",
+    "a2": "Netflix'i akıllı telefonunuz, tabletiniz, Akıllı TV'niz, dizüstü bilgisayarınız veya yayın cihazınızda tek bir sabit aylık ücretle izleyin.",
+    "q3": "Nerede izleyebilirim?",
+    "a3": "İstediğiniz yerde, istediğiniz zaman izleyin. Bilgisayarınızdan netflix.com adresinden web üzerinde veya internete bağlı herhangi bir cihazda Netflix hesabınızla oturum açarak anında izleyin.",
+    "q4": "Nasıl iptal ederim?",
+    "a4": "Netflix esnektir. Can sıkıcı sözleşmeler ve taahhütler yoktur. Hesabınızı çevrimiçi olarak iki tıklamayla kolayca iptal edebilirsiniz. İptal ücreti yoktur.",
+    "q5": "Netflix'te ne izleyebilirim?",
+    "a5": "Netflix; uzun metrajlı filmler, belgeseller, diziler, animeler, ödüllü Netflix orijinal içerikleri ve daha fazlasından oluşan kapsamlı bir kütüphaneye sahiptir. İstediğiniz kadar, istediğiniz zaman izleyin.",
+    "q6": "Netflix çocuklar için uygun mu?",
+    "a6": "Üyeliğinize dahil olan Netflix Çocuk deneyimi, çocuklar kendi alanlarında aile dostu dizilerin ve filmlerin keyfini çıkarırken ebeveynlere kontrol imkanı sağlar."
+  },
+  "Auth": {
+    "signIn": "Oturum Aç",
+    "emailOrPhone": "E-posta veya telefon numarası",
+    "password": "Parola",
+    "googleLogin": "Google ile Devam Et",
+    "forgot": "Parolayı mı unuttunuz?",
+    "rememberMe": "Beni hatırla",
+    "newToNetflix": "Netflix'e katılmak ister misiniz?",
+    "signUpNow": "Şimdi kaydolun.",
+    "captchaText": "Bu sayfa, robot olmadığınızı doğrulamak için Google reCAPTCHA tarafından korunmaktadır.",
+    "learnMore": "Daha fazla bilgi edinin.",
+    "emailError": "Lütfen geçerli bir e-posta adresi veya telefon numarası girin.",
+    "passwordError": "Parolanız 4 ila 60 karakter arasında olmalıdır."
+  },
+
+  "Billboard": {
+    "play": "Oynat",
+    "moreInfo": "Daha Fazla Bilgi"
+  },
+  "MovieRows": {
+    "matched": "Sizinle Eşleşenler",
+    "nowOnNetflix": "Netflix'te Popüler",
+    "top10": "Bugünün En İyi 10 Filmi",
+    "thinkYouLove": "Bunları Seveceğinizi Düşünüyoruz",
+    "animation": "Animasyon",
+    "action": "İlham Veren ve Aksiyon Filmleri",
+    "continueWatching": "James İçin İzlemeye Devam Et",
+    "weekend": "Bir Hafta Sonunda İzle",
+    "acclaimed": "Eleştirmenlerden Tam Not Alanlar",
+    "freshPicks": "Bugünün Taze Seçimleri"
+  }
 }
