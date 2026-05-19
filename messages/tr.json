@@ -72,5 +72,19 @@
   "a5": "Netflix; uzun metrajlı filmler, belgeseller, diziler, animeler, ödüllü Netflix orijinal içerikleri ve daha fazlasından oluşan kapsamlı bir kütüphaneye sahiptir. İstediğiniz kadar, istediğiniz zaman izleyin.",
   "q6": "Netflix çocuklar için uygun mu?",
   "a6": "Üyeliğinize dahil olan Netflix Çocuk deneyimi, çocuklar kendi alanlarında aile dostu dizilerin ve filmlerin keyfini çıkarırken ebeveynlere kontrol imkanı sağlar."
+},
+"Auth": {
+  "signIn": "Oturum Aç",
+  "emailOrPhone": "E-posta veya telefon numarası",
+  "password": "Parola",
+  "googleLogin": "Google ile Devam Et",
+  "forgot": "Parolayı mı unuttunuz?",
+  "rememberMe": "Beni hatırla",
+  "newToNetflix": "Netflix'e katılmak ister misiniz?",
+  "signUpNow": "Şimdi kaydolun.",
+  "captchaText": "Bu sayfa, robot olmadığınızı doğrulamak için Google reCAPTCHA tarafından korunmaktadır.",
+  "learnMore": "Daha fazla bilgi edinin.",
+  "emailError": "Lütfen geçerli bir e-posta adresi veya telefon numarası girin.",
+  "passwordError": "Parolanız 4 ila 60 karakter arasında olmalıdır."
 }
 }

@@ -72,5 +72,18 @@
   "a5": "Netflix tiene un amplio catálogo de largometrajes, documentales, series, anime, originales de Netflix premiados y más. Ve todo lo que quieras, cuando quieras.",
   "q6": "¿Es Netflix adecuado para los niños?",
   "a6": "La experiencia de Netflix Infantil está incluida en tu membresía para darles el control a los padres mientras los niños disfrutan de series y películas familiares en su propio espacio."
-}
-}
+},
+"Auth": {
+  "signIn": "Iniciar sesión",
+  "emailOrPhone": "Correo electrónico o número de teléfono",
+  "password": "Contraseña",
+  "googleLogin": "Continuar con Google",
+  "forgot": "¿Olvidaste tu contraseña?",
+  "rememberMe": "Recuérdame",
+  "newToNetflix": "¿Eres nuevo en Netflix?",
+  "signUpNow": "Regístrate ahora.",
+  "captchaText": "Esta página está protegida por Google reCAPTCHA para verificar que no eres un robot.",
+  "learnMore": "Más información.",
+  "emailError": "Introduce un correo electrónico o un número de teléfono válido.",
+  "passwordError": "La contraseña debe tener entre 4 y 60 caracteres."
+}}

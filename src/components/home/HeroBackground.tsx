@@ -1,29 +1,4 @@
 
-// import Image from "next/image";
-
-// const HeroBackground = () => {
-//   return (
-//     <div className="absolute inset-0 -z-10 h-screen w-full overflow-hidden bg-black">
-//       {/* ۱. عکس اصلی پس‌زمینه با روشنایی بیشتر */}
-//       <Image
-//         src="/images/landingPageBackground.jpg" // مسیر دقیق عکس خودت را اینجا بگذار
-//         alt="Netflix Background"
-//         fill
-//         priority
-//         className="object-cover opacity-65" // اپاسیتی از ۴۰ به ۶۵ رسید تا عکس واضح‌تر و روشن‌تر شود
-//       />
-
-//       {/* ۲. لایه سایه پایینی و بالایی برای خوانایی متن‌ها (ملایم‌تر از قبل) */}
-//       <div className="absolute inset-0 bg-linear-to-t from-grey-850 via-transparent to-black/30" />
-
-//       {/* ۳. لایه تاریکی محیطی بسیار لایت */}
-//       <div className="absolute inset-0 bg-black/20 mix-blend-multiply" />
-//     </div>
-//   );
-// };
-
-// export default HeroBackground;
-
 import Image from "next/image";
 
 const HeroBackground = () => {

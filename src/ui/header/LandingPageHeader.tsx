@@ -1,8 +1,7 @@
 import LanguageSwitcher from "@/src/components/LanguageSwitcher";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
-import Link from "next/link";
-
+import { Link } from '@/src/i18n/routing';
 const LandingPageHeader = () => {
   const t = useTranslations("Navbar");
   return (
@@ -24,7 +23,7 @@ const LandingPageHeader = () => {
         />
         <div className="flex items-center md:gap-6 gap-2">
          <LanguageSwitcher />   
-         <Link href="#">
+         <Link href="/signin">
          <button className="text-primary-white bg-primary-red hover:bg-secondary-red-200 text-reg-sb py-1 md:px-4 px-3 rounded-sm">{t("signIn")}</button>
          </Link>
         </div>

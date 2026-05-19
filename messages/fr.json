@@ -72,5 +72,19 @@
   "a5": "Netflix propose un vaste catalogue de longs-métrages, documentaires, séries, anime, programmes originaux Netflix primés et bien plus encore. Regardez tout ce que vous voulez, quand vous voulez.",
   "q6": "Netflix est-il adapté aux enfants ?",
   "a6": "L'espace Netflix Jeunesse est inclus dans votre abonnement pour offrir aux parents un contrôle total et permettre aux enfants de regarder des séries et des films en famille dans leur propre espace."
+},
+"Auth": {
+  "signIn": "Se connecter",
+  "emailOrPhone": "Adresse e-mail ou numéro de téléphone",
+  "password": "Mot de passe",
+  "googleLogin": "Continuer avec Google",
+  "forgot": "Mot de passe oublié ?",
+  "rememberMe": "Se souvenir de moi",
+  "newToNetflix": "Nouveau sur Netflix ?",
+  "signUpNow": "Inscrivez-vous maintenant.",
+  "captchaText": "Cette page est protégée por Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot.",
+  "learnMore": "En savoir plus.",
+  "emailError": "Veuillez saisir une adresse e-mail ou un numéro de téléphone valide.",
+  "passwordError": "Votre mot de passe doit comprendre entre 4 et 60 caractères."
 }
 }

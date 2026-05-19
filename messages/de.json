@@ -72,5 +72,19 @@
   "a5": "Netflix verfügt über eine umfangreiche Bibliothek von Spielfilmen, Dokumentationen, Serien, Animes, preisgekrönten Netflix-Originalen und mehr. Schauen Sie so viel Sie wollen, wann immer Sie wollen.",
   "q6": "Ist Netflix für Kinder geeignet?",
   "a6": "Das Netflix Kids-Erlebnis ist in Ihrer Mitgliedschaft enthalten. So behalten Eltern die Kontrolle, während Kinder familienfreundliche Serien und Filme in einem eigenen Bereich genießen können."
+},
+"Auth": {
+  "signIn": "Einloggen",
+  "emailOrPhone": "E-Mail-Adresse oder Telefonnummer",
+  "password": "Passwort",
+  "googleLogin": "Weiter mit Google",
+  "forgot": "Passwort vergessen?",
+  "rememberMe": "Zugangsdaten speichern",
+  "newToNetflix": "Neu bei Netflix?",
+  "signUpNow": "Jetzt registrieren.",
+  "captchaText": "Diese Seite wird durch Google reCAPTCHA geschützt, um festzustellen, dass Sie kein Roboter sind.",
+  "learnMore": "Mehr erfahren.",
+  "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse oder Telefonnummer ein.",
+  "passwordError": "Ihr Passwort muss zwischen 4 und 60 Zeichen lang sein."
 }
 }

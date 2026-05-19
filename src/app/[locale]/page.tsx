@@ -2,9 +2,14 @@ import Page from "@/src/components/home/Page";
 
 const page = () => {
   return (
-   <Page />
+    <div>
+      
+      <Page />
+    </div>
   );
 };
 
 export default page;
+
+
 

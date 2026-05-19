@@ -81,7 +81,7 @@ const AuthenticationPageFooter = () => {
   const t = useTranslations("Footer");
 
   return (
-    <section className="bg-grey-850 text-grey-100 lg:px-40 md:px-20 px-8 md:py-18 py-8 gap-12">
+    <section className=" text-grey-100 md:py-18 py-8 gap-12 bg-black/60 backdrop-blur-[2px]">
       <p className="md:text-reg-body text-reg-c1 pb-5">
         {t("questionsCall")}{" "}
         <span className="underline underline-offset-4 hover:no-underline"> 1-844-505-2993</span>
