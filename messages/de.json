@@ -130,6 +130,11 @@
     "loadingExperience": "NETFLIX-ERLEBNIS WIRD GELADEN...",
     "unknown": "Unbekannt",
     "na": "N/V"
+  },
+  "Player": {
+    "youAreWatching": "Sie schauen gerade",
+    "episodeIndicator": "Folge {number}",
+    "backToBrowse": "Zurück zur Übersicht"
   }
 
 }

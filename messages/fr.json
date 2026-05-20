@@ -130,5 +130,10 @@
     "loadingExperience": "CHARGEMENT DE L'EXPÉRIENCE NETFLIX...",
     "unknown": "Inconnu",
     "na": "N/A"
+  },
+  "Player": {
+    "youAreWatching": "Vous regardez",
+    "episodeIndicator": "Épisode {number}",
+    "backToBrowse": "Retour au catalogue"
   }
 }

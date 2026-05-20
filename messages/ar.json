@@ -130,5 +130,10 @@
     "loadingExperience": "جاري التحميل...",
     "unknown": "غير معروف",
     "na": "غير متاح"
+  },
+  "Player": {
+    "youAreWatching": "أنت تشاهد الآن",
+    "episodeIndicator": "الحلقة {number}",
+    "backToBrowse": "العودة للتصفح"
   }
 }

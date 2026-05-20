@@ -130,5 +130,10 @@
     "loadingExperience": "NETFLIXを読み込み中...",
     "unknown": "不明",
     "na": "該当なし"
+  },
+  "Player": {
+    "youAreWatching": "ご視聴中",
+    "episodeIndicator": "第{number}話",
+    "backToBrowse": "一覧に戻る"
   }
 }

@@ -130,5 +130,10 @@
     "loadingExperience": "NETFLIX DENEYİMİ YÜKLENİYOR...",
     "unknown": "Bilinmeyen",
     "na": "N/A"
+  },
+  "Player": {
+    "youAreWatching": "İzliyorsunuz",
+    "episodeIndicator": "{number}. Bölüm",
+    "backToBrowse": "Göz atmaya geri dön"
   }
 }

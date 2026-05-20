@@ -130,5 +130,10 @@
     "loadingExperience": "LOADING NETFLIX EXPERIENCE...",
     "unknown": "Unknown",
     "na": "N/A"
+  },
+  "Player": {
+    "youAreWatching": "You're watching",
+    "episodeIndicator": "E{number} \"Episode {number}\"",
+    "backToBrowse": "Back to browse"
   }
 }

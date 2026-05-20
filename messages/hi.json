@@ -130,5 +130,10 @@
     "loadingExperience": "नेटफ्लिक्स अनुभव लोड हो रहा है...",
     "unknown": "अज्ञात",
     "na": "लागू नहीं"
+  },
+  "Player": {
+    "youAreWatching": "आप देख रहे हैं",
+    "episodeIndicator": "एपिसोड {number}",
+    "backToBrowse": "वापस ब्राउज़ करें"
   }
 }

@@ -4,7 +4,8 @@
 import React, { useEffect, useState } from "react";
 import { X, Play, Plus, ThumbsUp, ChevronDown } from "lucide-react";
 import Image from "next/image";
-import { useTranslations } from "next-intl"; // پکیج استاندارد ترجمه در نکست
+import { useTranslations } from "next-intl";
+import PlayButton from "@/src/ui/PlayButton";
 
 interface MovieModalProps {
   movie: {
@@ -17,8 +18,7 @@ interface MovieModalProps {
 }
 
 const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
-  const t = useTranslations("Modal"); // دسترسی به کلیدهای بخش مودال
-  
+  const t = useTranslations("Modal"); 
   const [movieDetails, setMovieDetails] = useState<any>(null);
   const [similarMovies, setSimilarMovies] = useState<any[]>([]);
   const [episodes, setEpisodes] = useState<any[]>([]);
@@ -118,9 +118,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
           </div>
 
           <div className="absolute bottom-6 left-6 md:left-10 flex items-center gap-3 z-20">
-            <button className="bg-white text-black py-2 px-7 rounded-md font-bold flex items-center gap-2 hover:bg-neutral-200 transition text-sm md:text-base shadow-md cursor-pointer">
-              <Play size={18} className="fill-black" /> {t("play")}
-            </button>
+            <PlayButton movieId={movie.id} mediaType={mediaType} />
             <button className="border-2 border-zinc-400 bg-grey-700/60 hover:border-white p-2 rounded-full transition text-white shadow-md cursor-pointer">
               <Plus size={18} />
             </button>
@@ -141,7 +139,9 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                 <div className="flex items-center gap-2 text-xs md:text-sm text-zinc-400 flex-wrap font-medium">
                   <span className="text-secondary-green font-bold">
                     {movieDetails?.vote_average
-                      ? t("match", { percent: Math.round(movieDetails.vote_average * 10) })
+                      ? t("match", {
+                          percent: Math.round(movieDetails.vote_average * 10),
+                        })
                       : t("match", { percent: 98 })}
                   </span>
                   <span>
@@ -187,7 +187,8 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                 <p>
                   <span className="text-grey-200">{t("genres")}</span>{" "}
                   <span className="text-white">
-                    {movieDetails?.genres?.map((g: any) => g.name).join(", ") || t("na")}
+                    {movieDetails?.genres?.map((g: any) => g.name).join(", ") ||
+                      t("na")}
                   </span>
                 </p>
                 <p>
@@ -248,7 +249,10 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                           <div className="flex-1 min-w-0 space-y-1">
                             <div className="flex items-center justify-between text-sm font-bold">
                               <h4 className="text-zinc-200 group-hover:text-white line-clamp-1">
-                                {ep.name || t("episodeTitle", { number: ep.episode_number })}
+                                {ep.name ||
+                                  t("episodeTitle", {
+                                    number: ep.episode_number,
+                                  })}
                               </h4>
                               <span className="text-zinc-400 font-normal text-xs">
                                 {ep.runtime ? `${ep.runtime}m` : "45m"}
@@ -304,7 +308,11 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                             <div className="flex flex-col gap-1">
                               <span className="text-secondary-green text-xs font-bold">
                                 {simMovie.vote_average
-                                  ? t("match", { percent: Math.round(simMovie.vote_average * 10) })
+                                  ? t("match", {
+                                      percent: Math.round(
+                                        simMovie.vote_average * 10,
+                                      ),
+                                    })
                                   : t("match", { percent: 75 })}
                               </span>
                               <div className="flex items-center gap-2 text-[11px] text-zinc-400 font-medium">
@@ -360,7 +368,10 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
 
             <div className="space-y-3 border-t border-zinc-800/80 pt-8 text-xs md:text-sm text-zinc-400 font-normal">
               <h3 className="text-lg font-bold text-white tracking-wide pb-1">
-                {t("about", { title: movieDetails?.title || movieDetails?.name || movie.title })}
+                {t("about", {
+                  title:
+                    movieDetails?.title || movieDetails?.name || movie.title,
+                })}
               </h3>
               <p>
                 <span className="text-grey-200">{t("createdDirectedBy")}</span>{" "}
@@ -380,7 +391,8 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
               <p>
                 <span className="text-grey-200">{t("genres")}</span>{" "}
                 <span className="text-white">
-                  {movieDetails?.genres?.map((g: any) => g.name).join(", ") || t("na")}
+                  {movieDetails?.genres?.map((g: any) => g.name).join(", ") ||
+                    t("na")}
                 </span>
               </p>
               <p>
