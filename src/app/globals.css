@@ -91,7 +91,17 @@
 
 @layer utilities {
   .text-stroke {
-    -webkit-text-stroke: 2px #404040; /* رنگ خاکستری تیره دور واژه‌ها */
-    color: transparent !important; /* توخالی کردن داخل عدد */
+    -webkit-text-stroke: 2px #404040;
+    color: transparent !important; 
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;  
+    scrollbar-width: none;
   }
 }

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React, { useRef, useState } from "react";
@@ -15,12 +16,14 @@ interface MovieRowProps {
   title: string;
   movies: Movie[];
   isTop10?: boolean;
+  onMovieClick?: (movie: any) => void;
 }
 
 const MovieRow: React.FC<MovieRowProps> = ({
   title,
   movies,
   isTop10 = false,
+  onMovieClick
 }) => {
     const imageBaseUrl = process.env.NEXT_PUBLIC_TMDB_IMAGE_BASE_URL || "https://image.tmdb.org/t/p";
   const rowRef = useRef<HTMLDivElement>(null);
@@ -53,7 +56,6 @@ const MovieRow: React.FC<MovieRowProps> = ({
       </h2>
 
       <div className="relative md:-ml-2">
-        {/* دکمه چپ */}
         <button
           onClick={() => handleScroll("left")}
           className={`absolute top-0 bottom-0 left-0 h-full w-10 md:w-12 flex items-center justify-center bg-black/60 opacity-0 group-hover/row:opacity-100 hover:bg-black/80 transition-all duration-200 z-40 cursor-pointer ${
@@ -107,6 +109,7 @@ const MovieRow: React.FC<MovieRowProps> = ({
             return (
               <div
                 key={movie.id}
+                onClick={() => onMovieClick?.(movie)}
                 className="relative min-w-37.5 sm:min-w-52.5 md:min-w-72.5 aspect-video cursor-pointer rounded-sm overflow-hidden transform hover:scale-105 hover:z-30 transition-all duration-300 shadow-lg bg-zinc-900 group/item border border-zinc-900 hover:border-zinc-700"
               >
                 <Image
