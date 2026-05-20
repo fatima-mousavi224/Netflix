@@ -102,6 +102,33 @@
     "continueWatching": "Continue Watching for James",
     "weekend": "Watch In One Weekend",
     "acclaimed": "Critically Acclaimed Movies",
-    "freshPicks": "Today's Fresh Picks for You"
+    "freshPicks": "Today's Fresh Picks for You",
+    "popularTvShows": "Popular TV Shows"
+  },
+  "Modal": {
+    "play": "Play",
+    "match": "{percent}% Match",
+    "seasons": "{count, plural, =1 {# Season} other {# Seasons}}",
+    "topRank": "#2 in TV Shows Today",
+    "noDescription": "No description available for this title.",
+    "cast": "Cast:",
+    "genres": "Genres:",
+    "thisTitleIs": "This title is:",
+    "about": "About {title}",
+    "createdDirectedBy": "Created/Directed by:",
+    "netflixDirectors": "Netflix Directors",
+    "maturityRating": "Maturity rating:",
+    "maturityWarning": "Recommended for ages 13 and up",
+    "episodes": "Episodes",
+    "seasonDropdown": "Season 1",
+    "loadingEpisodes": "Loading Season Episodes...",
+    "noEpisodes": "No dynamic episodes found for this season.",
+    "episodeTitle": "Episode {number}",
+    "noEpisodeOverview": "No overview available for this episode.",
+    "moreLikeThis": "More Like This",
+    "trailersAndMore": "Trailers & More",
+    "loadingExperience": "LOADING NETFLIX EXPERIENCE...",
+    "unknown": "Unknown",
+    "na": "N/A"
   }
 }

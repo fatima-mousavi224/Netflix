@@ -102,6 +102,33 @@
     "continueWatching": "Reprendre la lecture pour James",
     "weekend": "À regarder en un week-end",
     "acclaimed": "Films salués par la critique",
-    "freshPicks": "Sélections fraîches du jour"
+    "freshPicks": "Sélections fraîches du jour",
+    "popularTvShows": "Séries TV populaires"
+  },
+  "Modal": {
+    "play": "Lecture",
+    "match": "Recommandé à {percent}%",
+    "seasons": "{count, plural, =1 {# saison} other {# saisons}}",
+    "topRank": "N° 2 des séries aujourd'hui",
+    "noDescription": "Aucune description disponible pour ce titre.",
+    "cast": "Distribution :",
+    "genres": "Genres :",
+    "thisTitleIs": "Ce titre est :",
+    "about": "À propos de {title}",
+    "createdDirectedBy": "Créé/Réalisé par :",
+    "netflixDirectors": "Réalisateurs Netflix",
+    "maturityRating": "Classification d'âge :",
+    "maturityWarning": "Recommandé pour les 13 ans et plus",
+    "episodes": "Épisodes",
+    "seasonDropdown": "Saison 1",
+    "loadingEpisodes": "Chargement des épisodes de la saison...",
+    "noEpisodes": "Aucun épisode dynamique trouvé pour cette saison.",
+    "episodeTitle": "Épisode {number}",
+    "noEpisodeOverview": "Aucun résumé disponible pour cet épisode.",
+    "moreLikeThis": "Titres similaires",
+    "trailersAndMore": "Bandes-annonces et plus",
+    "loadingExperience": "CHARGEMENT DE L'EXPÉRIENCE NETFLIX...",
+    "unknown": "Inconnu",
+    "na": "N/A"
   }
 }

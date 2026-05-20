@@ -251,7 +251,7 @@ const HomePageAcount = () => {
 
         {tvShows.length > 0 && (
           <MovieRow
-            title="Popular TV Shows"
+            title={rowT("popularTvShows")}
             movies={tvShows.slice(0, 20)}
             onMovieClick={(tvShow) => setSelectedMovie(tvShow)}
           />

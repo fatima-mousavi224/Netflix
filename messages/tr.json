@@ -102,6 +102,33 @@
     "continueWatching": "James İçin İzlemeye Devam Et",
     "weekend": "Bir Hafta Sonunda İzle",
     "acclaimed": "Eleştirmenlerden Tam Not Alanlar",
-    "freshPicks": "Bugünün Taze Seçimleri"
+    "freshPicks": "Bugünün Taze Seçimleri",
+    "popularTvShows": "Popüler Diziler"
+  },
+  "Modal": {
+    "play": "Oynat",
+    "match": "%{percent} Eşleşme",
+    "seasons": "{count, plural, =1 {# Sezon} other {# Sezon}}",
+    "topRank": "Bugün Dizilerde 2. Sırada",
+    "noDescription": "Bu yapım için henüz açıklama yok.",
+    "cast": "Oyuncu Kadrosu:",
+    "genres": "Türler:",
+    "thisTitleIs": "Bu yapım:",
+    "about": "{title} Hakkında",
+    "createdDirectedBy": "Yaratıcı/Yönetmen:",
+    "netflixDirectors": "Netflix Yönetmenleri",
+    "maturityRating": "Yaş Sınırı:",
+    "maturityWarning": "13 yaş ve üzeri için önerilir",
+    "episodes": "Bölümler",
+    "seasonDropdown": "1. Sezon",
+    "loadingEpisodes": "Sezon Bölümleri Yükleniyor...",
+    "noEpisodes": "Bu sezon için dinamik bölüm bulunamadı.",
+    "episodeTitle": "{number}. Bölüm",
+    "noEpisodeOverview": "Bu bölüm için özet bulunmuyor.",
+    "moreLikeThis": "Benzerleri",
+    "trailersAndMore": "Fragmanlar ve Dahası",
+    "loadingExperience": "NETFLIX DENEYİMİ YÜKLENİYOR...",
+    "unknown": "Bilinmeyen",
+    "na": "N/A"
   }
 }

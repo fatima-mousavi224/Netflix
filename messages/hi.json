@@ -102,6 +102,33 @@
     "continueWatching": "James के लिए देखना जारी रखें",
     "weekend": "एक वीकेंड में देखें",
     "acclaimed": "आलोचकों द्वारा सराही गई फ़िल्में",
-    "freshPicks": "आज की नई पसंद"
+    "freshPicks": "आज की नई पसंद",
+    "popularTvShows": "लोकप्रिय टीवी शो"
+  },
+  "Modal": {
+    "play": "चलाएं",
+    "match": "{percent}% मैच",
+    "seasons": "{count, plural, =1 {# सीज़न} other {# सीज़न}}",
+    "topRank": "आज टीवी शो में नंबर #2",
+    "noDescription": "इस शीर्षक के लिए कोई विवरण उपलब्ध नहीं है।",
+    "cast": "कलाकार:",
+    "genres": "शैलियां:",
+    "thisTitleIs": "यह शीर्षक है:",
+    "about": "{title} के बारे में",
+    "createdDirectedBy": "निर्माता/निर्देशक:",
+    "netflixDirectors": "नेटफ्लिक्स निर्देशक",
+    "maturityRating": "आयु रेटिंग:",
+    "maturityWarning": "13 वर्ष और उससे अधिक उम्र के लिए अनुशंसित",
+    "episodes": "एपिसोड",
+    "seasonDropdown": "सीज़न 1",
+    "loadingEpisodes": "सीज़न के एपिसोड लोड हो रहे हैं...",
+    "noEpisodes": "इस सीज़न के लिए कोई एपिसोड नहीं मिला।",
+    "episodeTitle": "एपिसोड {number}",
+    "noEpisodeOverview": "इस एपिसोड के लिए कोई विवरण उपलब्ध नहीं है।",
+    "moreLikeThis": "इसके जैसा और भी",
+    "trailersAndMore": "ट्रेलर और अधिक",
+    "loadingExperience": "नेटफ्लिक्स अनुभव लोड हो रहा है...",
+    "unknown": "अज्ञात",
+    "na": "लागू नहीं"
   }
 }

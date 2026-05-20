@@ -102,6 +102,33 @@
     "continueWatching": "متابعة المشاهدة لـ James",
     "weekend": "شاهد في عطلة نهاية الأسبوع",
     "acclaimed": "أفلام نالت إعجاب النقاد",
-    "freshPicks": "مختارات اليوم الطازجة"
+    "freshPicks": "مختارات اليوم الطازجة",
+    "popularTvShows": "مسلسلات تلفزيونية شعبية"
+  },
+  "Modal": {
+    "play": "تشغيل",
+    "match": "متطابق بنسبة {percent}%",
+    "seasons": "{count, plural, =1 {موسم واحد} =2 {موسمين} light {# مواسم} other {# موسم}}",
+    "topRank": "المركز الثاني في المسلسلات اليوم",
+    "noDescription": "لا يوجد وصف متاح هذا العمل.",
+    "cast": "طاقم العمل:",
+    "genres": "التصنيف:",
+    "thisTitleIs": "هذا العمل تميز بـ:",
+    "about": "نبذة عن {title}",
+    "createdDirectedBy": "تأليف / إخراج:",
+    "netflixDirectors": "مخرجو نتفليكس",
+    "maturityRating": "التصنيف العمري:",
+    "maturityWarning": "موصى به لمن هم في سن 13 عامًا فما فوق",
+    "episodes": "الحلقات",
+    "seasonDropdown": "الموسم 1",
+    "loadingEpisodes": "جاري تحميل حلقات الموسم...",
+    "noEpisodes": "لم يتم العثور على حلقات لهذا الموسم.",
+    "episodeTitle": "الحلقة {number}",
+    "noEpisodeOverview": "لا يوجد ملخص متاح لهذه الحلقة.",
+    "moreLikeThis": "أعمال مشابهة",
+    "trailersAndMore": "الإعلانات والمزيد",
+    "loadingExperience": "جاري التحميل...",
+    "unknown": "غير معروف",
+    "na": "غير متاح"
   }
 }

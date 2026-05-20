@@ -4,6 +4,7 @@
 import React, { useEffect, useState } from "react";
 import { X, Play, Plus, ThumbsUp, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import { useTranslations } from "next-intl"; // پکیج استاندارد ترجمه در نکست
 
 interface MovieModalProps {
   movie: {
@@ -16,6 +17,8 @@ interface MovieModalProps {
 }
 
 const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
+  const t = useTranslations("Modal"); // دسترسی به کلیدهای بخش مودال
+  
   const [movieDetails, setMovieDetails] = useState<any>(null);
   const [similarMovies, setSimilarMovies] = useState<any[]>([]);
   const [episodes, setEpisodes] = useState<any[]>([]);
@@ -106,7 +109,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                 height={16}
               />
               <span className="text-[10px] tracking-[0.3em] font-black text-zinc-300 uppercase">
-                {isTV ? "S E R I E S" : "M O V I E"}
+                {isTV ? "SERIES" : "MOVIE"}
               </span>
             </div>{" "}
             <h1 className="text-3xl md:text-5xl font-black tracking-tighter drop-shadow-lg uppercase">
@@ -116,7 +119,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
 
           <div className="absolute bottom-6 left-6 md:left-10 flex items-center gap-3 z-20">
             <button className="bg-white text-black py-2 px-7 rounded-md font-bold flex items-center gap-2 hover:bg-neutral-200 transition text-sm md:text-base shadow-md cursor-pointer">
-              <Play size={18} className="fill-black" /> Play
+              <Play size={18} className="fill-black" /> {t("play")}
             </button>
             <button className="border-2 border-zinc-400 bg-grey-700/60 hover:border-white p-2 rounded-full transition text-white shadow-md cursor-pointer">
               <Plus size={18} />
@@ -129,7 +132,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
 
         {loading ? (
           <div className="p-20 text-center text-zinc-500 animate-pulse tracking-widest text-xs font-mono">
-            LOADING NETFLIX EXPERIENCE...
+            {t("loadingExperience")}
           </div>
         ) : (
           <div className="p-6 md:p-12 space-y-12 bg-grey-850">
@@ -138,8 +141,8 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                 <div className="flex items-center gap-2 text-xs md:text-sm text-zinc-400 flex-wrap font-medium">
                   <span className="text-secondary-green font-bold">
                     {movieDetails?.vote_average
-                      ? `${Math.round(movieDetails.vote_average * 10)}% Match`
-                      : "98% Match"}
+                      ? t("match", { percent: Math.round(movieDetails.vote_average * 10) })
+                      : t("match", { percent: 98 })}
                   </span>
                   <span>
                     {movieDetails?.release_date?.split("-")[0] ||
@@ -148,7 +151,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                   </span>
                   {isTV && movieDetails?.number_of_seasons && (
                     <span className="text-zinc-200 font-semibold">
-                      {movieDetails.number_of_seasons} Seasons
+                      {t("seasons", { count: movieDetails.number_of_seasons })}
                     </span>
                   )}
                   <span className="border border-zinc-600 px-1.5 py-0.2 rounded-sm text-[10px] font-bold text-zinc-300">
@@ -163,34 +166,32 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                   <div className="scale-90 bg-red-600 p-0.5 rounded-xs inline-flex items-center justify-center w-5 h-5 font-black text-[10px]">
                     TOP
                   </div>
-                  <span>#2 in TV Shows Today</span>
+                  <span>{t("topRank")}</span>
                 </div>
 
                 <p className="text-grey-10 text-sm md:text-base leading-relaxed font-normal">
-                  {movieDetails?.overview ||
-                    "No description available for this title."}
+                  {movieDetails?.overview || t("noDescription")}
                 </p>
               </div>
 
               <div className="text-xs md:text-sm space-y-3 text-zinc-400 font-normal">
                 <p>
-                  <span className="text-grey-200">Cast:</span>{" "}
+                  <span className="text-grey-200">{t("cast")}</span>{" "}
                   <span className="text-white">
                     {movieDetails?.credits?.cast
                       ?.slice(0, 3)
                       .map((c: any) => c.name)
-                      .join(", ") || "Unknown"}
+                      .join(", ") || t("unknown")}
                   </span>
                 </p>
                 <p>
-                  <span className="text-grey-200">Genres:</span>{" "}
+                  <span className="text-grey-200">{t("genres")}</span>{" "}
                   <span className="text-white">
-                    {movieDetails?.genres?.map((g: any) => g.name).join(", ") ||
-                      "N/A"}
+                    {movieDetails?.genres?.map((g: any) => g.name).join(", ") || t("na")}
                   </span>
                 </p>
                 <p>
-                  <span className="text-grey-200">This title is:</span>{" "}
+                  <span className="text-grey-200">{t("thisTitleIs")}</span>{" "}
                   <span className="text-white">Exciting, Top Styled</span>
                 </p>
               </div>
@@ -200,20 +201,20 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
               <div className="space-y-4 border-t border-zinc-800/80 pt-8">
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl md:text-2xl font-bold tracking-wide">
-                    Episodes
+                    {t("episodes")}
                   </h3>
                   <button className="flex items-center gap-6 border border-zinc-600 bg-[#242424] px-4 py-1.5 text-sm rounded font-medium text-white hover:bg-zinc-800 cursor-pointer">
-                    <span>Season 1</span> <ChevronDown size={16} />
+                    <span>{t("seasonDropdown")}</span> <ChevronDown size={16} />
                   </button>
                 </div>
 
                 {loadingEpisodes ? (
                   <div className="text-zinc-500 py-6 text-sm animate-pulse">
-                    Loading Season Episodes...
+                    {t("loadingEpisodes")}
                   </div>
                 ) : episodes.length === 0 ? (
                   <div className="text-zinc-500 py-2 text-xs font-light">
-                    No dynamic episodes found for this season.
+                    {t("noEpisodes")}
                   </div>
                 ) : (
                   <div className="flex flex-col">
@@ -247,15 +248,14 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                           <div className="flex-1 min-w-0 space-y-1">
                             <div className="flex items-center justify-between text-sm font-bold">
                               <h4 className="text-zinc-200 group-hover:text-white line-clamp-1">
-                                {ep.name || `Episode ${ep.episode_number}`}
+                                {ep.name || t("episodeTitle", { number: ep.episode_number })}
                               </h4>
                               <span className="text-zinc-400 font-normal text-xs">
                                 {ep.runtime ? `${ep.runtime}m` : "45m"}
                               </span>
                             </div>
                             <p className="text-xs text-zinc-400 line-clamp-2 font-light leading-normal">
-                              {ep.overview ||
-                                "No overview available for this episode."}
+                              {ep.overview || t("noEpisodeOverview")}
                             </p>
                           </div>
                         </div>
@@ -269,7 +269,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
             {similarMovies.length > 0 && (
               <div className="space-y-5 border-t border-zinc-800/80 pt-8">
                 <h3 className="text-xl md:text-2xl font-bold tracking-wide">
-                  More Like This
+                  {t("moreLikeThis")}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {similarMovies.map((simMovie: any) => {
@@ -304,8 +304,8 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                             <div className="flex flex-col gap-1">
                               <span className="text-secondary-green text-xs font-bold">
                                 {simMovie.vote_average
-                                  ? `${Math.round(simMovie.vote_average * 10)}% Match`
-                                  : "75% Match"}
+                                  ? t("match", { percent: Math.round(simMovie.vote_average * 10) })
+                                  : t("match", { percent: 75 })}
                               </span>
                               <div className="flex items-center gap-2 text-[11px] text-zinc-400 font-medium">
                                 <span className="border border-zinc-600 px-1 rounded-sm text-[9px] font-bold">
@@ -323,8 +323,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                             </button>
                           </div>
                           <p className="text-xs text-grey-25 font-normal line-clamp-4 leading-relaxed grow">
-                            {simMovie.overview ||
-                              "No overview available for this title."}
+                            {simMovie.overview || t("noDescription")}
                           </p>
                         </div>
                       </div>
@@ -337,7 +336,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
             {movieDetails?.videos?.results?.length > 0 && (
               <div className="space-y-4 border-t border-zinc-800/80 pt-8">
                 <h3 className="text-xl md:text-2xl font-bold tracking-wide">
-                  Trailers & More
+                  {t("trailersAndMore")}
                 </h3>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                   {movieDetails.videos.results.slice(0, 3).map((video: any) => (
@@ -361,36 +360,35 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
 
             <div className="space-y-3 border-t border-zinc-800/80 pt-8 text-xs md:text-sm text-zinc-400 font-normal">
               <h3 className="text-lg font-bold text-white tracking-wide pb-1">
-                About {movieDetails?.title || movieDetails?.name || movie.title}
+                {t("about", { title: movieDetails?.title || movieDetails?.name || movie.title })}
               </h3>
               <p>
-                <span className="text-grey-200">Created/Directed by:</span>{" "}
+                <span className="text-grey-200">{t("createdDirectedBy")}</span>{" "}
                 <span className="text-white">
-                  {movieDetails?.created_by?.[0]?.name || "Netflix Directors"}
+                  {movieDetails?.created_by?.[0]?.name || t("netflixDirectors")}
                 </span>
               </p>
               <p>
-                <span className="text-grey-200">Cast:</span>{" "}
+                <span className="text-grey-200">{t("cast")}</span>{" "}
                 <span className="text-white">
                   {movieDetails?.credits?.cast
                     ?.slice(0, 8)
                     .map((c: any) => c.name)
-                    .join(", ") || "Unknown"}
+                    .join(", ") || t("unknown")}
                 </span>
               </p>
               <p>
-                <span className="text-grey-200">Genres:</span>{" "}
+                <span className="text-grey-200">{t("genres")}</span>{" "}
                 <span className="text-white">
-                  {movieDetails?.genres?.map((g: any) => g.name).join(", ") ||
-                    "N/A"}
+                  {movieDetails?.genres?.map((g: any) => g.name).join(", ") || t("na")}
                 </span>
               </p>
               <p>
-                <span className="text-grey-200">Maturity rating:</span>{" "}
+                <span className="text-grey-200">{t("maturityRating")}</span>{" "}
                 <span className="border border-zinc-600 px-1 rounded-sm text-[10px] text-zinc-300 inline-block mr-1">
                   13+
                 </span>{" "}
-                Recommended for ages 13 and up
+                {t("maturityWarning")}
               </p>
             </div>
           </div>

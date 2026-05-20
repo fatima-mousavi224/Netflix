@@ -26,67 +26,67 @@
     "speedTest": "Prueba de velocidad"
   },
   "Navbar": {
-  "home": "Inicio",
-  "tvShows": "Series",
-  "movies": "Películas",
-  "newPopular": "Novedades más vistas",
-  "myList": "Mi lista",
-  "browseLanguages": "Explorar por idiomas",
-  "signIn": "Iniciar sesión"
-},
-"Hero": {
-  "title": "Películas, series ilimitadas y mucho más",
-  "subtitle": "Disfruta donde quieras. Cancela cuando quieras.",
-  "description": "¿Quieres ver Netflix ya? Introduce tu correo para crear una suscripción o reactivarla."
-},
-"HeroForm": {
-  "emailPlaceholder": "Dirección de correo electrónico",
-  "getStarted": "Comenzar"
-},
-"PromoBanner": {
-  "title": "El Netflix que te encanta por solo $6.99.",
-  "subtitle": "Contrata el plan Estándar con anuncios.",
-  "learnMore": "Más información"
-},
-"Features": {
-  "s1Title": "Disfruta en tu TV",
-  "s1Desc": "Ve en Smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.",
-  "s2Title": "Ve donde quieras",
-  "s2Desc": "Streaming ilimitado de películas y series en tu teléfono, tableta, computadora y TV.",
-  "s3Title": "Crea perfiles para niños",
-  "s3Desc": "Lleva a los niños a vivir aventuras con sus personajes favoritos en un espacio propio, gratis con tu membresía.",
-  "s4Title": "Descarga tus series para verlas offline",
-  "s4Desc": "Ve en un avión, un tren o un submarino..."
-},
-"FAQ": {
-  "title": "Preguntas frecuentes",
-  "q1": "¿Qué es Netflix?",
-  "a1": "Netflix es un servicio de streaming que ofrece una gran variedad de series, películas, anime, documentaires y otros contenidos premiados en miles de dispositivos conectados a internet.",
-  "q2": "¿Cuánto cuesta Netflix?",
-  "a2": "Disfruta de Netflix en tu smartphone, tableta, Smart TV, computadora o dispositivo de streaming, todo por una tarifa mensual fija.",
-  "q3": "¿Dónde puedo ver Netflix?",
-  "a3": "Míralo donde quieras y cuando quieras. Inicia sesión con tu cuenta de Netflix para ver contenido al instante en la web en netflix.com desde tu computadora personal o en cualquier dispositivo conectado a internet.",
-  "q4": "¿Cómo cancelo?",
-  "a4": "Netflix es flexible. Sin contratos molestos ni compromisos. Puedes cancelar fácilmente tu cuenta online con solo dos clics. Sin cargos por cancelación.",
-  "q5": "¿Qué puedo ver en Netflix?",
-  "a5": "Netflix tiene un amplio catálogo de largometrajes, documentales, series, anime, originales de Netflix premiados y más. Ve todo lo que quieras, cuando quieras.",
-  "q6": "¿Es Netflix adecuado para los niños?",
-  "a6": "La experiencia de Netflix Infantil está incluida en tu membresía para darles el control a los padres mientras los niños disfrutan de series y películas familiares en su propio espacio."
-},
-"Auth": {
-  "signIn": "Iniciar sesión",
-  "emailOrPhone": "Correo electrónico o número de teléfono",
-  "password": "Contraseña",
-  "googleLogin": "Continuar con Google",
-  "forgot": "¿Olvidaste tu contraseña?",
-  "rememberMe": "Recuérdame",
-  "newToNetflix": "¿Eres nuevo en Netflix?",
-  "signUpNow": "Regístrate ahora.",
-  "captchaText": "Esta página está protegida por Google reCAPTCHA para verificar que no eres un robot.",
-  "learnMore": "Más información.",
-  "emailError": "Introduce un correo electrónico o un número de teléfono válido.",
-  "passwordError": "La contraseña debe tener entre 4 y 60 caracteres."
-},
+    "home": "Inicio",
+    "tvShows": "Series",
+    "movies": "Películas",
+    "newPopular": "Novedades más vistas",
+    "myList": "Mi lista",
+    "browseLanguages": "Explorar por idiomas",
+    "signIn": "Iniciar sesión"
+  },
+  "Hero": {
+    "title": "Películas, series ilimitadas y mucho más",
+    "subtitle": "Disfruta donde quieras. Cancela cuando quieras.",
+    "description": "¿Quieres ver Netflix ya? Introduce tu correo para crear una suscripción o reactivarla."
+  },
+  "HeroForm": {
+    "emailPlaceholder": "Dirección de correo electrónico",
+    "getStarted": "Comenzar"
+  },
+  "PromoBanner": {
+    "title": "El Netflix que te encanta por solo $6.99.",
+    "subtitle": "Contrata el plan Estándar con anuncios.",
+    "learnMore": "Más información"
+  },
+  "Features": {
+    "s1Title": "Disfruta en tu TV",
+    "s1Desc": "Ve en Smart TV, Playstation, Xbox, Chromecast, Apple TV, reproductores de Blu-ray y más.",
+    "s2Title": "Ve donde quieras",
+    "s2Desc": "Streaming ilimitado de películas y series en tu teléfono, tableta, computadora y TV.",
+    "s3Title": "Crea perfiles para niños",
+    "s3Desc": "Lleva a los niños a vivir aventuras con sus personajes favoritos en un espacio propio, gratis con tu membresía.",
+    "s4Title": "Descarga tus series para verlas offline",
+    "s4Desc": "Ve en un avión, un tren o un submarino..."
+  },
+  "FAQ": {
+    "title": "Preguntas frecuentes",
+    "q1": "¿Qué es Netflix?",
+    "a1": "Netflix es un servicio de streaming que ofrece una gran variedad de series, películas, anime, documentaires y otros contenidos premiados en miles de dispositivos conectados a internet.",
+    "q2": "¿Cuánto cuesta Netflix?",
+    "a2": "Disfruta de Netflix en tu smartphone, tableta, Smart TV, computadora o dispositivo de streaming, todo por una tarifa mensual fija.",
+    "q3": "¿Dónde puedo ver Netflix?",
+    "a3": "Míralo donde quieras y cuando quieras. Inicia sesión con tu cuenta de Netflix para ver contenido al instante en la web en netflix.com desde tu computadora personal o en cualquier dispositivo conectado a internet.",
+    "q4": "¿Cómo cancelo?",
+    "a4": "Netflix es flexible. Sin contratos molestos ni compromisos. Puedes cancelar fácilmente tu cuenta online con solo dos clics. Sin cargos por cancelación.",
+    "q5": "¿Qué puedo ver en Netflix?",
+    "a5": "Netflix tiene un amplio catálogo de largometrajes, documentales, series, anime, originales de Netflix premiados y más. Ve todo lo que quieras, cuando quieras.",
+    "q6": "¿Es Netflix adecuado para los niños?",
+    "a6": "La experiencia de Netflix Infantil está incluida en tu membresía para darles el control a los padres mientras los niños disfrutan de series y películas familiares en su propio espacio."
+  },
+  "Auth": {
+    "signIn": "Iniciar sesión",
+    "emailOrPhone": "Correo electrónico o número de teléfono",
+    "password": "Contraseña",
+    "googleLogin": "Continuar con Google",
+    "forgot": "¿Olvidaste tu contraseña?",
+    "rememberMe": "Recuérdame",
+    "newToNetflix": "¿Eres nuevo en Netflix?",
+    "signUpNow": "Regístrate ahora.",
+    "captchaText": "Esta página está protegida por Google reCAPTCHA para verificar que no eres un robot.",
+    "learnMore": "Más información.",
+    "emailError": "Introduce un correo electrónico o un número de teléfono válido.",
+    "passwordError": "La contraseña debe tener entre 4 y 60 caracteres."
+  },
 
   "Billboard": {
     "play": "Reproducir",
@@ -102,6 +102,34 @@
     "continueWatching": "Continuar viendo como James",
     "weekend": "Para ver en un fin de semana",
     "acclaimed": "Películas aclamadas por la crítica",
-    "freshPicks": "Selecciones frescas de hoy"
+    "freshPicks": "Selecciones frescas de hoy",
+
+    "popularTvShows": "Series de TV populares"
+  },
+  "Modal": {
+    "play": "Reproducir",
+    "match": "{percent}% de coincidencia",
+    "seasons": "{count, plural, =1 {# temporada} other {# temporadas}}",
+    "topRank": "N.º 2 en series hoy",
+    "noDescription": "No hay descripción disponible para este título.",
+    "cast": "Elenco:",
+    "genres": "Géneros:",
+    "thisTitleIs": "Este título es:",
+    "about": "Acerca de {title}",
+    "createdDirectedBy": "Creado/Dirigido por:",
+    "netflixDirectors": "Directores de Netflix",
+    "maturityRating": "Calificación por edad:",
+    "maturityWarning": "Recomendado para mayores de 13 años",
+    "episodes": "Episodios",
+    "seasonDropdown": "Temporada 1",
+    "loadingEpisodes": "Cargando episodios de la temporada...",
+    "noEpisodes": "No se encontraron episodios dinámicos para esta temporada.",
+    "episodeTitle": "Episodio {number}",
+    "noEpisodeOverview": "No hay sinopsis disponible para este episodio.",
+    "moreLikeThis": "Más títulos similares",
+    "trailersAndMore": "Tráilers y más",
+    "loadingExperience": "CARGANDO EXPERIENCIA NETFLIX...",
+    "unknown": "Desconocido",
+    "na": "N/A"
   }
 }
