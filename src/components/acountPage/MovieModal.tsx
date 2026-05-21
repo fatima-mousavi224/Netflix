@@ -2,10 +2,11 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { X, Play, Plus, ThumbsUp, ChevronDown } from "lucide-react";
+import { X, Play, Plus, Check, ThumbsUp, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import PlayButton from "@/src/ui/PlayButton";
+import { useMyList } from "@/src/context/MyListContext";
 
 interface MovieModalProps {
   movie: {
@@ -18,7 +19,7 @@ interface MovieModalProps {
 }
 
 const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
-  const t = useTranslations("Modal"); 
+  const t = useTranslations("Modal");
   const [movieDetails, setMovieDetails] = useState<any>(null);
   const [similarMovies, setSimilarMovies] = useState<any[]>([]);
   const [episodes, setEpisodes] = useState<any[]>([]);
@@ -31,6 +32,9 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
 
   const isTV = movie.type === "tv" || !movie.title;
   const mediaType = isTV ? "tv" : "movie";
+
+  const { addToMyList, removeFromMyList, isInList } = useMyList();
+  const isAdded = isInList(Number(movie.id));
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -104,7 +108,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
             <div className="flex items-center gap-1.5 animate-pulse">
               <Image
                 src="/icons/Netflix_logoMovie.svg"
-                alt="netfliex movie"
+                alt="netflix movie"
                 width={16}
                 height={16}
               />
@@ -119,9 +123,32 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
 
           <div className="absolute bottom-6 left-6 md:left-10 flex items-center gap-3 z-20">
             <PlayButton movieId={movie.id} mediaType={mediaType} />
-            <button className="border-2 border-zinc-400 bg-grey-700/60 hover:border-white p-2 rounded-full transition text-white shadow-md cursor-pointer">
-              <Plus size={18} />
+
+            <button
+              onClick={() => {
+                if (isAdded) {
+                  removeFromMyList(Number(movie.id));
+                } else {
+                  addToMyList({
+                    id: Number(movie.id),
+                    title:
+                      movieDetails?.title || movieDetails?.name || movie.title,
+                    backdrop_path:
+                      movieDetails?.backdrop_path || movie.thumbnailUrl,
+                    poster_path: movieDetails?.poster_path,
+                    type: mediaType,
+                  });
+                }
+              }}
+              className={`border-2 p-2 rounded-full transition shadow-md cursor-pointer ${
+                isAdded
+                  ? "border-green-500 bg-green-950/40 text-green-500"
+                  : "border-zinc-400 bg-grey-700/60 text-white hover:border-white"
+              }`}
+            >
+              {isAdded ? <Check size={18} /> : <Plus size={18} />}
             </button>
+
             <button className="border-2 border-zinc-400 bg-grey-700/60 hover:border-white p-2 rounded-full transition text-white shadow-md cursor-pointer">
               <ThumbsUp size={18} />
             </button>
@@ -282,6 +309,8 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                         ? `${imageBaseUrl}/w500${simMovie.backdrop_path || simMovie.poster_path}`
                         : "/images/AcountpageBackgroun.png";
 
+                    const isSimMovieAdded = isInList(Number(simMovie.id));
+
                     return (
                       <div
                         key={simMovie.id}
@@ -297,13 +326,13 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                           <div className="absolute top-2 left-2 p-1">
                             <Image
                               src="/icons/Netflix_logoMovie.svg"
-                              alt="netfliex movie"
+                              alt="netflix movie"
                               width={12}
                               height={12}
                             />
                           </div>
                         </div>
-                        <div className="p-5 flex flex-col grow space-y-3">
+                        <div className="p-5 flex flex-col grow space-y-3 justify-between">
                           <div className="flex items-center justify-between">
                             <div className="flex flex-col gap-1">
                               <span className="text-secondary-green text-xs font-bold">
@@ -326,8 +355,34 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
                                 </span>
                               </div>
                             </div>
-                            <button className="border-2 border-zinc-500 bg-grey-850/60 p-1.5 rounded-full hover:border-white transition cursor-pointer text-white">
-                              <Plus size={14} />
+
+                            <button
+                              onClick={() => {
+                                if (isSimMovieAdded) {
+                                  removeFromMyList(Number(simMovie.id));
+                                } else {
+                                  addToMyList({
+                                    id: Number(simMovie.id),
+                                    title: simMovie.title || simMovie.name,
+                                    backdrop_path:
+                                      simMovie.backdrop_path ||
+                                      simMovie.poster_path,
+                                    poster_path: simMovie.poster_path,
+                                    type: mediaType,
+                                  });
+                                }
+                              }}
+                              className={`border-2 p-2 rounded-full transition shadow-md cursor-pointer ${
+                                isSimMovieAdded
+                                  ? "border-green-500 bg-green-950/40 text-green-500"
+                                  : "border-zinc-400 bg-grey-700/60 text-white hover:border-white"
+                              }`}
+                            >
+                              {isSimMovieAdded ? (
+                                <Check size={14} />
+                              ) : (
+                                <Plus size={14} />
+                              )}
                             </button>
                           </div>
                           <p className="text-xs text-grey-25 font-normal line-clamp-4 leading-relaxed grow">

@@ -127,7 +127,7 @@ const HomePageAcount = () => {
           results: any[],
           isVertical = false,
           badgeType?: "Recently Added" | "New Season" | "Leaving Soon",
-          defaultType: "movie" | "tv" = "movie" // نوع دیفالت مدیا
+          defaultType: "movie" | "tv" = "movie" 
         ) => {
           if (!results) return [];
 
@@ -143,7 +143,7 @@ const HomePageAcount = () => {
               ? m.poster_path || m.backdrop_path
               : m.backdrop_path || m.poster_path,
             badge: index % 5 === 0 ? badgeType : undefined,
-            type: defaultType, // ذخیره نوع مدیا در تگ آبجکت خروجی
+            type: defaultType, 
           }));
         };
 
@@ -237,8 +237,7 @@ const HomePageAcount = () => {
       <MovieBillboard
         title={billboardMovie.title}
         description={billboardMovie.description}
-        backdropUrl={billboardMovie.backdropUrl}
-      />
+        backdropUrl={billboardMovie.backdropUrl} id={""}      />
 
       <div className="-mt-12 md:-mt-28 relative z-30 pb-20 space-y-6 md:space-y-10 bg-linear-to-b from-transparent via-black to-black">
         {trending.length > 0 && (

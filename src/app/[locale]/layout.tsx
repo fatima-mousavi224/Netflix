@@ -7,6 +7,7 @@ import { routing } from "@/src/i18n/routing";
 import { Inter } from "next/font/google";
 import AuthProvider from "@/src/providers/AuthProvider";
 import { ProfileProvider } from "@/src/context/ProfileContext";
+import { MyListProvider } from "@/src/context/MyListContext";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -39,7 +40,7 @@ export default async function LocaleLayout({
         <AuthProvider>
           <ProfileProvider>
             <NextIntlClientProvider messages={messages}>
-              {children}
+              <MyListProvider>{children}</MyListProvider>
             </NextIntlClientProvider>
           </ProfileProvider>
         </AuthProvider>
