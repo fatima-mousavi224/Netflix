@@ -203,7 +203,7 @@ const HomePageHeader = () => {
     { name: t("movies"), href: "/movies" },
     { name: t("newPopular"), href: "/new-popular" },
     { name: t("myList"), href: "/my-list" },
-    { name: t("browseLanguages"), href: "/browse-languages" },
+    { name: t("browseLanguages"), href: "/browse" },
   ];
 
   return (

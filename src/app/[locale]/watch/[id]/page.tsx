@@ -8,14 +8,12 @@ interface WatchPageProps {
 }
 
 export default async function WatchPage({ params, searchParams }: WatchPageProps) {
-  // ۱. باز کردن پرامس پارامترهای آدرس (حتماً باید await شوند)
   const resolvedParams = await params;
   const resolvedSearchParams = await searchParams;
 
   const movieId = resolvedParams?.id;
   const mediaType = resolvedSearchParams?.type === "tv" ? "tv" : "movie";
 
-  // اگر آیدی به هر دلیلی نرسیده بود، از کرش کردن جلوگیری می‌کنیم
   if (!movieId) {
     return (
       <div className="w-full h-screen bg-black flex items-center justify-center text-zinc-500">
@@ -26,7 +24,6 @@ export default async function WatchPage({ params, searchParams }: WatchPageProps
 
   return (
     <main className="w-full h-screen bg-black">
-      {/* ۲. پاس دادن مقادیر واقعی و باز شده به پلیر کلاینتی */}
       <VideoPlayer movieId={movieId} mediaType={mediaType} />
     </main>
   );
