@@ -136,5 +136,18 @@
     "youAreWatching": "Estás viendo",
     "episodeIndicator": "Capítulo {number}",
     "backToBrowse": "Volver به explorar"
+  },
+  
+  "Browse": {
+    "title": "Explorar por idiomas",
+    "selectPreferences": "Selecciona tus preferencias",
+    "originalLanguage": "Idioma original",
+    "sortBy": "Ordenar por",
+    "suggestions": "Sugerencias para ti",
+    "topRated": "Más valoradas",
+    "recentlyAdded": "Añadidas recientemente",
+    "noImage": "Sin imagen",
+    "loading": "Cargando..."
   }
+
 }

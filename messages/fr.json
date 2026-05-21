@@ -135,5 +135,18 @@
     "youAreWatching": "Vous regardez",
     "episodeIndicator": "Épisode {number}",
     "backToBrowse": "Retour au catalogue"
+  },
+  
+  "Browse": {
+    "title": "Parcourir par langues",
+    "selectPreferences": "Sélectionnez vos préférences",
+    "originalLanguage": "Langue originale",
+    "sortBy": "Trier par",
+    "suggestions": "Suggestions pour vous",
+    "topRated": "Les mieux notés",
+    "recentlyAdded": "Récemment ajouté",
+    "noImage": "Aucune image",
+    "loading": "Chargement..."
   }
+
 }

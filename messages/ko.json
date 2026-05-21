@@ -135,6 +135,19 @@
     "youAreWatching": "현재 시청 중",
     "episodeIndicator": "{number}화",
     "backToBrowse": "찾아보기로 돌아가기"
+  },
+  
+  "Browse": {
+    "title": "언어별 찾아보기",
+    "selectPreferences": "기호 선택",
+    "originalLanguage": "원어",
+    "sortBy": "정렬 기준",
+    "suggestions": "추천 콘텐츠",
+    "topRated": "높은 평점",
+    "recentlyAdded": "최근 저장된 콘텐츠",
+    "noImage": "이미지 없음",
+    "loading": "로딩 중..."
   }
+
 
 }

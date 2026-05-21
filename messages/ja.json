@@ -135,5 +135,18 @@
     "youAreWatching": "ご視聴中",
     "episodeIndicator": "第{number}話",
     "backToBrowse": "一覧に戻る"
+  },
+  
+  "Browse": {
+    "title": "言語別で探す",
+    "selectPreferences": "好みの設定を選択",
+    "originalLanguage": "元の言語",
+    "sortBy": "並び替え",
+    "suggestions": "あなたへのオススメ",
+    "topRated": "高評価",
+    "recentlyAdded": "最近追加されたコンテンツ",
+    "noImage": "画像なし",
+    "loading": "読み込み中..."
   }
+
 }

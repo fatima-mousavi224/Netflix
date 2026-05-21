@@ -30,9 +30,10 @@ export default async function LocaleLayout({
   const direction = locale === "ar" ? "rtl" : "ltr";
 
   return (
-    <html lang={locale} dir={direction} suppressHydrationWarning>
+    <html lang={locale} dir={direction}>
       <body
         className={`${inter.variable} font-sans bg-black text-white antialiased`}
+        suppressHydrationWarning={true}
       >
         {/* Wrap application inside Auth and Language providers */}
         <AuthProvider>

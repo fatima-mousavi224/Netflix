@@ -135,6 +135,19 @@
     "youAreWatching": "Sie schauen gerade",
     "episodeIndicator": "Folge {number}",
     "backToBrowse": "Zurück zur Übersicht"
+  },
+  
+  "Browse": {
+    "title": "Nach Sprachen durchsuchen",
+    "selectPreferences": "Wählen Sie Ihre Präferenzen",
+    "originalLanguage": "Originalsprache",
+    "sortBy": "Sortieren nach",
+    "suggestions": "Empfehlungen für Sie",
+    "topRated": "Bestbewertet",
+    "recentlyAdded": "Kürzlich hinzugefügt",
+    "noImage": "Kein Bild",
+    "loading": "Laden..."
   }
+
 
 }

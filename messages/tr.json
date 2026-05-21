@@ -135,5 +135,17 @@
     "youAreWatching": "İzliyorsunuz",
     "episodeIndicator": "{number}. Bölüm",
     "backToBrowse": "Göz atmaya geri dön"
+  },
+  
+  "Browse": {
+    "title": "Dillere Göre Göz At",
+    "selectPreferences": "Tercihlerinizi Seçin",
+    "originalLanguage": "Orijinal Dil",
+    "sortBy": "Sıralama ölçütü",
+    "suggestions": "Sizin İçin Öneriler",
+    "topRated": "En Yüksek Puan Alanlar",
+    "recentlyAdded": "Yakın Zamanda Eklenenler",
+    "noImage": "Resim Yok",
+    "loading": "Yükleniyor..."
   }
 }

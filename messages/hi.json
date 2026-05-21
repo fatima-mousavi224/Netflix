@@ -135,5 +135,17 @@
     "youAreWatching": "आप देख रहे हैं",
     "episodeIndicator": "एपिसोड {number}",
     "backToBrowse": "वापस ब्राउज़ करें"
+  },
+  
+  "Browse": {
+    "title": "भाषाओं के अनुसार ब्राउज़ करें",
+    "selectPreferences": "अपनी प्राथमिकताएं चुनें",
+    "originalLanguage": "मूल भाषा",
+    "sortBy": "इसके अनुसार क्रमबद्ध करें",
+    "suggestions": "आपके लिए सुझाव",
+    "topRated": "शीर्ष रेटेड",
+    "recentlyAdded": "हाल ही में जोड़ा गया",
+    "noImage": "कोई छवि नहीं",
+    "loading": "लोड हो रहा है..."
   }
 }

@@ -135,5 +135,17 @@
     "youAreWatching": "أنت تشاهد الآن",
     "episodeIndicator": "الحلقة {number}",
     "backToBrowse": "العودة للتصفح"
+  },
+
+  "Browse": {
+    "title": "تصفح حسب اللغات",
+    "selectPreferences": "اختر تفضيلاتك",
+    "originalLanguage": "اللغة الأصلية",
+    "sortBy": "فرز حسب",
+    "suggestions": "اقتراحات لك",
+    "topRated": "الأعلى تقييماً",
+    "recentlyAdded": "أضيف مؤخراً",
+    "noImage": "لا توجد صورة",
+    "loading": "جاري التحميل..."
   }
 }

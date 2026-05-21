@@ -2,13 +2,13 @@
 
 import React from "react";
 import { Play } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useRouter, useParams } from "next/navigation"; 
 import { useTranslations } from "next-intl";
 
 interface PlayButtonProps {
   movieId: string;
   mediaType?: "movie" | "tv";
-  className?: string; // برای اینکه اگر خواستی استایل اختصاصی در هر صفحه به آن بدهی
+  className?: string;
 }
 
 const PlayButton: React.FC<PlayButtonProps> = ({
@@ -17,12 +17,18 @@ const PlayButton: React.FC<PlayButtonProps> = ({
   className = "",
 }) => {
   const router = useRouter();
-  const t = useTranslations("Modal"); // یا هر سکشنی که کلید play در آن تعریف شده است
+  const params = useParams(); 
+  const t = useTranslations("Modal");
+
+  const locale = params?.locale || "en";
 
   const handlePlay = () => {
-    if (movieId) {
-      router.push(`/watch/${movieId}?type=${mediaType}`);
+    if (!movieId) {
+      console.error("Movie ID is missing!");
+      return;
     }
+    
+    router.push(`/${locale}/watch/${movieId}?type=${mediaType}`);
   };
 
   return (
