@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import React from "react";
@@ -12,6 +13,7 @@ interface BillboardProps {
   title: string;
   description: string;
   backdropUrl: string;
+  onOpenModal: (movie: { id: string; title: string; thumbnailUrl: string; type?: "movie" | "tv" }) => void; // ۱. اضافه شدن تابع باز کردن مودال به پراپس
 }
 
 const MovieBillboard: React.FC<BillboardProps> = ({
@@ -20,6 +22,7 @@ const MovieBillboard: React.FC<BillboardProps> = ({
   title,
   description,
   backdropUrl,
+  onOpenModal, // ۲. تحویل گرفتن تابع از والد
 }) => {
   const t = useTranslations("Billboard");
   const imageBaseUrl =
@@ -51,7 +54,19 @@ const MovieBillboard: React.FC<BillboardProps> = ({
         <div className="flex items-center gap-3 mt-2 md:mt-4">
           <PlayButton movieId={id} mediaType={type} />
 
-          <button className="bg-grey-10/20 text-white rounded-sm md:rounded-md py-1.5 md:py-2 px-4 md:px-6 flex items-center gap-2 text-xs md:text-base font-semibold hover:bg-grey-10/30 border border-transparent hover:border-grey-10/40 transition-colors cursor-pointer backdrop-blur-sm">
+          {/* ۳. دکمه More Info اصلاح شده بدون ارور */}
+          <button
+            onClick={() => {
+              // ارسال اطلاعات همین فیلم به والد برای باز شدن مودال
+              onOpenModal({
+                id,
+                title,
+                thumbnailUrl: backdropUrl,
+                type,
+              });
+            }}
+            className="bg-grey-10/20 text-white rounded-sm md:rounded-md py-1.5 md:py-2 px-4 md:px-6 flex items-center gap-2 text-xs md:text-base font-semibold hover:bg-grey-10/30 border border-transparent hover:border-grey-10/40 transition-colors cursor-pointer backdrop-blur-sm"
+          >
             <Info size={18} />
             <span>{t("moreInfo")}</span>
           </button>

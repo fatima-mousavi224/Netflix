@@ -4,7 +4,7 @@
 import React, { useEffect, useState } from "react";
 import MovieBillboard from "./MovieBillboard";
 import MovieRow from "./MovieRow";
-import MovieModal from "./MovieModal"; 
+import MovieModal from "./MovieModal";
 import { useTranslations } from "next-intl";
 import HomePageFooter from "@/src/ui/footers/HomePageFooter";
 
@@ -31,11 +31,14 @@ const HomePageAcount = () => {
   const [tvShows, setTvShows] = useState<Movie[]>([]);
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
+  // اضافه کردن فیلد id و type به استیت اولیه بیلبورد برای جلوگیری از ارور
   const [billboardMovie, setBillboardMovie] = useState({
+    id: "0",
     title: "House of Ninjas",
     description:
       "Years after retiring from their formidable ninja lives, a dysfunctional family must return to shadowy missions to counteract a string of looming threats.",
     backdropUrl: "/images/AcountpageBackgroun.png",
+    type: "movie" as "movie" | "tv",
   });
 
   const [loading, setLoading] = useState(true);
@@ -127,7 +130,7 @@ const HomePageAcount = () => {
           results: any[],
           isVertical = false,
           badgeType?: "Recently Added" | "New Season" | "Leaving Soon",
-          defaultType: "movie" | "tv" = "movie" 
+          defaultType: "movie" | "tv" = "movie",
         ) => {
           if (!results) return [];
 
@@ -143,7 +146,7 @@ const HomePageAcount = () => {
               ? m.poster_path || m.backdrop_path
               : m.backdrop_path || m.poster_path,
             badge: index % 5 === 0 ? badgeType : undefined,
-            type: defaultType, 
+            type: defaultType,
           }));
         };
 
@@ -182,36 +185,45 @@ const HomePageAcount = () => {
         const allTvShows = tvPopularP1.results || [];
 
         if (trendingP1?.results?.length > 0) {
-          setTrending(formatMovies(allTrending, false, "Recently Added", "movie"));
+          setTrending(
+            formatMovies(allTrending, false, "Recently Added", "movie"),
+          );
           const firstMovie = trendingP1.results[0];
           setBillboardMovie({
+            id: String(firstMovie.id), // ذخیره شناسه واقعی فیلم اول جهت باز کردن مودال
             title: firstMovie.title || firstMovie.name,
             description: firstMovie.overview,
             backdropUrl:
               firstMovie.backdrop_path || "/images/AcountpageBackgroun.png",
+            type: "movie",
           });
         }
 
         if (allPopular.length > 0)
           setPopular(formatMovies(allPopular, false, "New Season", "movie"));
         if (topRatedP1?.results)
-          setTopRatedVertical(formatMovies(topRatedP1.results, true, undefined, "movie"));
+          setTopRatedVertical(
+            formatMovies(topRatedP1.results, true, undefined, "movie"),
+          );
         if (allAnimations.length > 0)
           setAnimations(formatMovies(allAnimations, false, undefined, "movie"));
         if (allActions.length > 0)
-          setActionMovies(formatMovies(allActions, false, "Leaving Soon", "movie"));
+          setActionMovies(
+            formatMovies(allActions, false, "Leaving Soon", "movie"),
+          );
         if (allComedies.length > 0)
-          setComedyMovies(formatMovies(allComedies, false, "Recently Added", "movie"));
-        if (allHorrors.length > 0) 
+          setComedyMovies(
+            formatMovies(allComedies, false, "Recently Added", "movie"),
+          );
+        if (allHorrors.length > 0)
           setHorrorMovies(formatMovies(allHorrors, false, undefined, "movie"));
         if (allSciFi.length > 0)
           setSciFiMovies(formatMovies(allSciFi, false, "New Season", "movie"));
-        if (allUpcoming.length > 0) 
+        if (allUpcoming.length > 0)
           setUpcoming(formatMovies(allUpcoming, false, undefined, "movie"));
-        
+
         if (allTvShows.length > 0)
           setTvShows(formatMovies(allTvShows, false, "New Season", "tv"));
-
       } catch (error) {
         console.error("Error loading data:", error);
       } finally {
@@ -234,11 +246,16 @@ const HomePageAcount = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
+      {/* تصحیح پراپ‌ها بر اساس استیت billboardMovie */}
       <MovieBillboard
+        id={billboardMovie.id}
         title={billboardMovie.title}
         description={billboardMovie.description}
-        backdropUrl={billboardMovie.backdropUrl} id={""}      />
-
+        backdropUrl={billboardMovie.backdropUrl}
+        type={billboardMovie.type}
+        onOpenModal={setSelectedMovie} 
+      />
+      
       <div className="-mt-12 md:-mt-28 relative z-30 pb-20 space-y-6 md:space-y-10 bg-linear-to-b from-transparent via-black to-black">
         {trending.length > 0 && (
           <MovieRow
@@ -335,7 +352,7 @@ const HomePageAcount = () => {
       {selectedMovie && (
         <MovieModal
           movie={selectedMovie}
-          onClose={() => setSelectedMovie(null)} 
+          onClose={() => setSelectedMovie(null)}
         />
       )}
     </div>

@@ -7,6 +7,7 @@ import Image from "next/image";
 import { useTranslations } from "next-intl";
 import PlayButton from "@/src/ui/PlayButton";
 import { useMyList } from "@/src/context/MyListContext";
+import LikeButton from "@/src/ui/LikeButton";
 
 interface MovieModalProps {
   movie: {
@@ -148,10 +149,7 @@ const MovieModal: React.FC<MovieModalProps> = ({ movie, onClose }) => {
             >
               {isAdded ? <Check size={18} /> : <Plus size={18} />}
             </button>
-
-            <button className="border-2 border-zinc-400 bg-grey-700/60 hover:border-white p-2 rounded-full transition text-white shadow-md cursor-pointer">
-              <ThumbsUp size={18} />
-            </button>
+            <LikeButton movieId={movie.id} />
           </div>
         </div>
 
