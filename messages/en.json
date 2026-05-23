@@ -136,7 +136,7 @@
     "episodeIndicator": "E{number} \"Episode {number}\"",
     "backToBrowse": "Back to browse"
   },
-  
+
   "Browse": {
     "title": "Browse by Languages",
     "selectPreferences": "Select Your Preferences",
@@ -147,6 +147,45 @@
     "recentlyAdded": "Recently Added",
     "noImage": "No Image",
     "loading": "Loading..."
-  }
-
+  },
+  "Terms": {
+    "title": "Terms of Use",
+    "lastUpdated": "Last Updated: May 23, 2026",
+    "tableOfContents": "Table of Contents",
+    "membershipTitle": "1. Membership",
+    "membershipContent": "Your Netflix membership will continue until terminated. To use the Netflix service you must have Internet access and a Netflix ready device.",
+    "billingTitle": "2. Billing and Cancellation",
+    "billingContent": "The membership fee for the Netflix service and any other charges you may incur will be charged to your Payment Method.",
+    "serviceTitle": "3. Netflix Service",
+    "serviceContent": "You must be at least 18 years of age to become a member. Minors may only use the service under the supervision of an adult.",
+    "passwordsTitle": "4. Passwords & Account Access",
+    "passwordsContent": "The member who created the Netflix account is responsible for any activity that occurs through the account."
+  },
+  "Privacy": {
+    "title": "Privacy Statement",
+    "intro": "At Netflix, we respect your privacy. Here is a simple breakdown.",
+    "dataProtection": "Data Protection",
+    "dataProtectionDesc": "We encrypt your personal data to keep it safe.",
+    "noSelling": "No Selling",
+    "noSellingDesc": "We never sell your personal information to third parties.",
+    "control": "Control",
+    "controlDesc": "You can download or delete your data at any time from settings.",
+    "howWeUse": "How we use your information",
+    "howWeUseDesc": "We use information to provide, analyze, administer, enhance and personalize our services and marketing efforts, to process your registration, your orders and your payments.",
+    "cookies": "Cookies and Advertising",
+    "cookiesDesc": "We and our Service Providers use cookies and other technologies (such as web beacons), as well as advertising identifiers, for various reasons.",
+    "note": "Note: By using our service, you agree to the collection of data as described in this policy."
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "success": "Your message has been sent! We will contact you soon.",
+    "emailPlaceholder": "Email Address",
+    "messagePlaceholder": "How can we help you?",
+    "sendButton": "Send Message"
+  },
+  "ComingSoon": {
+  "title": "Coming Soon",
+  "description": "We are working hard to bring this feature to you.",
+  "button": "Go Back Home"
+}
 }

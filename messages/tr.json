@@ -147,5 +147,45 @@
     "recentlyAdded": "Yakın Zamanda Eklenenler",
     "noImage": "Resim Yok",
     "loading": "Yükleniyor..."
-  }
+  },
+  "Terms": {
+  "title": "Kullanım Koşulları",
+  "lastUpdated": "Son Güncelleme: 23 Mayıs 2026",
+  "tableOfContents": "İçindekiler",
+  "membershipTitle": "1. Üyelik",
+  "membershipContent": "Netflix üyeliğiniz iptal edilene kadar devam edecektir. Hizmeti kullanmak için internet erişiminiz ve Netflix uyumlu bir cihazınız olmalıdır.",
+  "billingTitle": "2. Faturalama ve İptal",
+  "billingContent": "Üyelik ücreti ve oluşabilecek diğer masraflar Ödeme Yönteminizden tahsil edilecektir.",
+  "serviceTitle": "3. Netflix Hizmeti",
+  "serviceContent": "Üye olmak için en az 18 yaşında olmalısınız. Reşit olmayanlar hizmeti yalnızca bir yetişkinin gözetiminde kullanabilir.",
+  "passwordsTitle": "4. Şifreler ve Hesap Erişimi",
+  "passwordsContent": "Hesabı oluşturan üye, hesap üzerinden gerçekleşen tüm etkinliklerden sorumludur."
+},
+"Privacy": {
+  "title": "Gizlilik Bildirimi",
+  "intro": "Netflix olarak gizliliğinize saygı duyuyoruz. İşte basit bir özet.",
+  "dataProtection": "Veri Koruması",
+  "dataProtectionDesc": "Kişisel verilerinizi güvende tutmak için şifreliyoruz.",
+  "noSelling": "Satış Yok",
+  "noSellingDesc": "Kişisel bilgilerinizi asla üçüncü taraflara satmayız.",
+  "control": "Kontrol",
+  "controlDesc": "Verilerinizi istediğiniz zaman ayarlardan indirebilir veya silebilirsiniz.",
+  "howWeUse": "Bilgilerinizi nasıl kullanıyoruz",
+  "howWeUseDesc": "Bilgileri hizmetlerimizi sunmak, analiz etmek, yönetmek, geliştirmek ve kişiselleştirmek, ayrıca kaydınızı, siparişlerinizi ve ödemelerinizi işlemek için kullanıyoruz.",
+  "cookies": "Çerezler ve Reklamcılık",
+  "cookiesDesc": "Biz ve Hizmet Sağlayıcılarımız, çeşitli nedenlerle çerezler ve diğer teknolojilerin yanı sıra reklam tanımlayıcıları kullanıyoruz.",
+  "note": "Not: Hizmetimizi kullanarak, verilerin bu politikada açıklandığı şekilde toplanmasını kabul etmiş olursunuz."
+},
+"Contact": {
+  "title": "Bize Ulaşın",
+  "success": "Mesajınız gönderildi! Yakında sizinle iletişime geçeceğiz.",
+  "emailPlaceholder": "E-posta Adresi",
+  "messagePlaceholder": "Size nasıl yardımcı olabiliriz?",
+  "sendButton": "Mesaj Gönder"
+},
+"ComingSoon": {
+  "title": "Yakında",
+  "description": "Bu özelliği size sunmak için çok çalışıyoruz.",
+  "button": "Ana Sayfaya Dön"
+}
 }

@@ -13,7 +13,7 @@
 //       <div className="grid lg:grid-cols-4 grid-cols-2 gap-9">
 
 //         {/* 1 */}
-        
+
 //         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
 //           <p className="underline underline-offset-4 hover:no-underline">
 //             <Link href="#">FQA</Link>
@@ -98,7 +98,6 @@
 
 // export default LandingPageFooter;
 
-
 "use client";
 
 import { useTranslations } from "next-intl";
@@ -112,82 +111,97 @@ const LandingPageFooter = () => {
     <section className="bg-primary-black text-grey-100 lg:px-40 md:px-20 px-8 md:py-18 py-8 gap-12">
       <p className="md:text-reg-body text-reg-c1 pb-5">
         {t("questionsCall")}{" "}
-        <span className="underline underline-offset-4 hover:no-underline"> 1-844-505-2993</span>
+        <span className="underline underline-offset-4 hover:no-underline">
+          {" "}
+          1-844-505-2993
+        </span>
       </p>
       <div className="grid lg:grid-cols-4 grid-cols-2 gap-9">
         {/* 1 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("fqa")}</Link>
+            <Link href="/help">{t("fqa")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("investorRelations")}</Link>
+            <a
+              href="https://ir.netflix.net/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("investorRelations")}
+            </a>{" "}
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("buyGiftCards")}</Link>
+            <Link href="/coming-soon">{t("buyGiftCards")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("cookiePreferences")}</Link>
+            <Link href="/coming-soon">{t("cookiePreferences")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("legalNotices")}</Link>
+            <Link href="/coming-soon">{t("legalNotices")}</Link>
           </p>
         </div>
 
         {/* 2 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("helpCenter")}</Link>
+            <Link href="/help">{t("helpCenter")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("jobs")}</Link>
+            <a
+              href="https://jobs.netflix.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {t("jobs")}
+            </a>{" "}
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("waysToWatch")}</Link>
+            <Link href="/coming-soon">{t("waysToWatch")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("corporateInformation")}</Link>
+            <Link href="/coming-soon">{t("corporateInformation")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("onlyOnNetflix")}</Link>
+            <Link href="/coming-soon">{t("onlyOnNetflix")}</Link>
           </p>
         </div>
 
         {/* 3 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("account")}</Link>
+            <Link href="/profiles">{t("account")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("netflixShop")}</Link>
+            <Link href="/coming-soon">{t("netflixShop")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("termsOfUse")}</Link>
+            <Link href="/terms">{t("termsOfUse")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("contactUs")}</Link>
+            <Link href="/contact">{t("contactUs")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("doNotSell")}</Link>
+            <Link href="/coming-soon">{t("doNotSell")}</Link>
           </p>
         </div>
 
         {/* 4 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("mediaCenter")}</Link>
+            <Link href="/coming-soon">{t("mediaCenter")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("redeemGiftCards")}</Link>
+            <Link href="/coming-soon">{t("redeemGiftCards")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("privacy")}</Link>
+            <Link href="/privacy">{t("privacy")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("speedTest")}</Link>
+            <Link href="/coming-soon">{t("speedTest")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("adChoices")}</Link>
+            <Link href="/coming-soon">{t("adChoices")}</Link>
           </p>
         </div>
       </div>

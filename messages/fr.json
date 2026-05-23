@@ -136,7 +136,7 @@
     "episodeIndicator": "Épisode {number}",
     "backToBrowse": "Retour au catalogue"
   },
-  
+
   "Browse": {
     "title": "Parcourir par langues",
     "selectPreferences": "Sélectionnez vos préférences",
@@ -147,6 +147,45 @@
     "recentlyAdded": "Récemment ajouté",
     "noImage": "Aucune image",
     "loading": "Chargement..."
-  }
-
+  },
+  "Terms": {
+    "title": "Conditions d'utilisation",
+    "lastUpdated": "Dernière mise à jour : 23 mai 2026",
+    "tableOfContents": "Table des matières",
+    "membershipTitle": "1. Abonnement",
+    "membershipContent": "Votre abonnement se poursuit jusqu'à sa résiliation. Vous devez avoir un accès Internet et un appareil compatible.",
+    "billingTitle": "2. Facturation et résiliation",
+    "billingContent": "Les frais d'abonnement seront prélevés via votre mode de paiement.",
+    "serviceTitle": "3. Service Netflix",
+    "serviceContent": "Vous devez avoir au moins 18 ans. Les mineurs ne peuvent utiliser le service que sous la surveillance d'un adulte.",
+    "passwordsTitle": "4. Mots de passe et accès",
+    "passwordsContent": "Le titulaire du compte est responsable de toute activité sur le compte."
+  },
+  "Privacy": {
+    "title": "Déclaration de confidentialité",
+    "intro": "Chez Netflix, nous respectons votre vie privée. Voici un résumé.",
+    "dataProtection": "Protection des données",
+    "dataProtectionDesc": "Nous cryptons vos données pour les garder en sécurité.",
+    "noSelling": "Pas de vente",
+    "noSellingDesc": "Nous ne vendons jamais vos informations à des tiers.",
+    "control": "Contrôle",
+    "controlDesc": "Vous pouvez télécharger ou supprimer vos données à tout moment.",
+    "howWeUse": "Utilisation des données",
+    "howWeUseDesc": "Nous utilisons les données pour fournir, analyser et personnaliser nos services.",
+    "cookies": "Cookies et publicité",
+    "cookiesDesc": "Nous utilisons des cookies pour faciliter l'accès à nos services.",
+    "note": "Note : En utilisant notre service, vous acceptez la collecte de données."
+  },
+  "Contact": {
+    "title": "Contactez-nous",
+    "success": "Message envoyé ! Nous vous contacterons bientôt.",
+    "emailPlaceholder": "Adresse e-mail",
+    "messagePlaceholder": "Comment pouvons-nous vous aider ?",
+    "sendButton": "Envoyer le message"
+  },
+  "ComingSoon": {
+  "title": "Bientôt disponible",
+  "description": "Nous travaillons dur pour vous proposer cette fonctionnalité.",
+  "button": "Retour à l'accueil"
+}
 }

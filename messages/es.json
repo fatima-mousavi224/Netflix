@@ -137,7 +137,7 @@
     "episodeIndicator": "Capítulo {number}",
     "backToBrowse": "Volver به explorar"
   },
-  
+
   "Browse": {
     "title": "Explorar por idiomas",
     "selectPreferences": "Selecciona tus preferencias",
@@ -148,6 +148,45 @@
     "recentlyAdded": "Añadidas recientemente",
     "noImage": "Sin imagen",
     "loading": "Cargando..."
-  }
-
+  },
+  "Terms": {
+    "title": "Términos de uso",
+    "lastUpdated": "Última actualización: 23 de mayo de 2026",
+    "tableOfContents": "Índice",
+    "membershipTitle": "1. Suscripción",
+    "membershipContent": "Su suscripción continuará hasta que se cancele. Debe tener acceso a Internet y un dispositivo compatible.",
+    "billingTitle": "2. Facturación y cancelación",
+    "billingContent": "La cuota de suscripción se cobrará a través de su forma de pago.",
+    "serviceTitle": "3. Servicio de Netflix",
+    "serviceContent": "Debe tener al menos 18 años. Los menores solo pueden usar el servicio bajo supervisión.",
+    "passwordsTitle": "4. Contraseñas y acceso",
+    "passwordsContent": "El titular es responsable de toda actividad que ocurra en la cuenta."
+  },
+  "Privacy": {
+    "title": "Declaración de privacidad",
+    "intro": "En Netflix respetamos tu privacidad. Aquí tienes un resumen.",
+    "dataProtection": "Protección de datos",
+    "dataProtectionDesc": "Encriptamos tus datos personales para mantenerlos seguros.",
+    "noSelling": "No vendemos datos",
+    "noSellingDesc": "Nunca vendemos tu información personal a terceros.",
+    "control": "Control",
+    "controlDesc": "Puedes descargar o borrar tus datos en cualquier momento.",
+    "howWeUse": "Uso de la información",
+    "howWeUseDesc": "Usamos la información para proveer, analizar y personalizar nuestros servicios.",
+    "cookies": "Cookies y publicidad",
+    "cookiesDesc": "Usamos cookies para facilitar el acceso a nuestros servicios.",
+    "note": "Nota: Al usar nuestro servicio, aceptas la recopilación de datos."
+  },
+  "Contact": {
+    "title": "Contáctanos",
+    "success": "¡Mensaje enviado! Te contactaremos pronto.",
+    "emailPlaceholder": "Correo electrónico",
+    "messagePlaceholder": "¿Cómo podemos ayudarte?",
+    "sendButton": "Enviar mensaje"
+  },
+  "ComingSoon": {
+  "title": "Próximamente",
+  "description": "Estamos trabajando duro para ofrecerte esta función.",
+  "button": "Volver al inicio"
+}
 }

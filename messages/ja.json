@@ -136,7 +136,7 @@
     "episodeIndicator": "第{number}話",
     "backToBrowse": "一覧に戻る"
   },
-  
+
   "Browse": {
     "title": "言語別で探す",
     "selectPreferences": "好みの設定を選択",
@@ -147,6 +147,45 @@
     "recentlyAdded": "最近追加されたコンテンツ",
     "noImage": "画像なし",
     "loading": "読み込み中..."
-  }
-
+  },
+  "Terms": {
+    "title": "利用規約",
+    "lastUpdated": "最終更新日: 2026年5月23日",
+    "tableOfContents": "目次",
+    "membershipTitle": "1. メンバーシップ",
+    "membershipContent": "メンバーシップは解約されるまで継続します。サービス利用にはインターネット接続と対応デバイスが必要です。",
+    "billingTitle": "2. 請求とキャンセル",
+    "billingContent": "利用料金は登録されたお支払い方法に請求されます。",
+    "serviceTitle": "3. Netflixサービス",
+    "serviceContent": "18歳以上である必要があります。未成年者は大人の監督下でのみ利用可能です。",
+    "passwordsTitle": "4. パスワードとアカウントアクセス",
+    "passwordsContent": "アカウント作成者が、そのアカウントで行われるすべての活動に対して責任を負います。"
+  },
+  "Privacy": {
+    "title": "プライバシーに関する声明",
+    "intro": "Netflixではお客様のプライバシーを尊重しています。以下に概要を説明します。",
+    "dataProtection": "データ保護",
+    "dataProtectionDesc": "お客様のデータを安全に保つために暗号化しています。",
+    "noSelling": "データの販売なし",
+    "noSellingDesc": "個人情報を第三者に販売することはありません。",
+    "control": "コントロール",
+    "controlDesc": "いつでもデータのダウンロードや削除が可能です。",
+    "howWeUse": "情報の利用目的",
+    "howWeUseDesc": "サービスの提供、分析、パーソナライズのために情報を利用します。",
+    "cookies": "Cookieおよび広告",
+    "cookiesDesc": "サービスへのアクセスを容易にするためにCookieを使用しています。",
+    "note": "注：サービスを利用することで、本ポリシーに従ったデータ収集に同意したことになります。"
+  },
+  "Contact": {
+    "title": "お問い合わせ",
+    "success": "メッセージを送信しました。間もなくご連絡いたします。",
+    "emailPlaceholder": "メールアドレス",
+    "messagePlaceholder": "ご用件をお聞かせください",
+    "sendButton": "メッセージを送信"
+  },
+  "ComingSoon": {
+  "title": "近日公開",
+  "description": "この機能をお届けするために懸命に取り組んでいます。",
+  "button": "ホームに戻る"
+}
 }

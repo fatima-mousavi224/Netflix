@@ -90,46 +90,46 @@ const AuthenticationPageFooter = () => {
         {/* 1 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("fqa")}</Link>
+            <Link href="/help">{t("fqa")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("privacy")}</Link>
+            <Link href="/privacy">{t("privacy")}</Link>
           </p>
         </div>
 
         {/* 2 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("helpCenter")}</Link>
+            <Link href="/help">{t("helpCenter")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("cookiePreferences")}</Link>
+            <Link href="/coming-soon">{t("cookiePreferences")}</Link>
           </p>
         </div>
 
         {/* 3 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("netflixShop")}</Link>
+            <Link href="/coming-soon">{t("netflixShop")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("corporateInformation")}</Link>
+            <Link href="/coming-soon">{t("corporateInformation")}</Link>
           </p>
         </div>
 
         {/* 4 */}
         <div className="flex flex-col gap-3 md:text-reg-body text-reg-c1">
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("termsOfUse")}</Link>
+            <Link href="/terms">{t("termsOfUse")}</Link>
           </p>
           <p className="underline underline-offset-4 hover:no-underline">
-            <Link href="#">{t("doNotSell")}</Link>
+            <Link href="/coming-soon">{t("doNotSell")}</Link>
           </p>
         </div>
       </div>
       <div className="mt-2">
         <p className="underline underline-offset-4 hover:no-underline md:pb-8 pb-6 md:text-reg-body text-reg-c1">
-          <Link href="#">{t("adChoices")}</Link>
+          <Link href="/coming-soon">{t("adChoices")}</Link>
         </p>
         <LanguageSwitcher />
       </div>
