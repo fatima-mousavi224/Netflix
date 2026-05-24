@@ -187,5 +187,12 @@
   "title": "Coming Soon",
   "description": "We are working hard to bring this feature to you.",
   "button": "Go Back Home"
+},
+"Search": {
+  "placeholder": "Titles, people, genres",
+  "noResults": "No results found for",
+  "searching": "Searching TMDB...",
+  "resultsFound": "Results found",
+  "tryAnother": "Try another movie title"
 }
 }

@@ -190,7 +190,7 @@ const HomePageAcount = () => {
           );
           const firstMovie = trendingP1.results[0];
           setBillboardMovie({
-            id: String(firstMovie.id), // ذخیره شناسه واقعی فیلم اول جهت باز کردن مودال
+            id: String(firstMovie.id), 
             title: firstMovie.title || firstMovie.name,
             description: firstMovie.overview,
             backdropUrl:
@@ -246,7 +246,6 @@ const HomePageAcount = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      {/* تصحیح پراپ‌ها بر اساس استیت billboardMovie */}
       <MovieBillboard
         id={billboardMovie.id}
         title={billboardMovie.title}

@@ -22,7 +22,7 @@ const MovieBillboard: React.FC<BillboardProps> = ({
   title,
   description,
   backdropUrl,
-  onOpenModal, // ۲. تحویل گرفتن تابع از والد
+  onOpenModal,
 }) => {
   const t = useTranslations("Billboard");
   const imageBaseUrl =
@@ -54,10 +54,8 @@ const MovieBillboard: React.FC<BillboardProps> = ({
         <div className="flex items-center gap-3 mt-2 md:mt-4">
           <PlayButton movieId={id} mediaType={type} />
 
-          {/* ۳. دکمه More Info اصلاح شده بدون ارور */}
           <button
             onClick={() => {
-              // ارسال اطلاعات همین فیلم به والد برای باز شدن مودال
               onOpenModal({
                 id,
                 title,

@@ -187,5 +187,12 @@
   "title": "Demnächst",
   "description": "Wir arbeiten hart daran, Ihnen diese Funktion zur Verfügung zu stellen.",
   "button": "Zurück zur Startseite"
+},
+"Search": {
+  "placeholder": "Titel, Personen, Genres",
+  "noResults": "Keine Ergebnisse gefunden für",
+  "searching": "Suche läuft...",
+  "resultsFound": "Gefundene Ergebnisse",
+  "tryAnother": "Versuchen Sie es mit einem anderen Titel"
 }
 }

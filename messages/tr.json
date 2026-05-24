@@ -187,5 +187,12 @@
   "title": "Yakında",
   "description": "Bu özelliği size sunmak için çok çalışıyoruz.",
   "button": "Ana Sayfaya Dön"
+},
+"Search": {
+  "placeholder": "İçerik، kişi، tür",
+  "noResults": "için sonuç bulunamadı",
+  "searching": "Aranıyor...",
+  "resultsFound": "Bulunan sonuçlar",
+  "tryAnother": "Başka bir başlık deneyin"
 }
 }

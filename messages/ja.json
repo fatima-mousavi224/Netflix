@@ -187,5 +187,12 @@
   "title": "近日公開",
   "description": "この機能をお届けするために懸命に取り組んでいます。",
   "button": "ホームに戻る"
+},
+"Search": {
+  "placeholder": "タイトル、出演者、ジャンル",
+  "noResults": "の結果が見つかりませんでした",
+  "searching": "検索中...",
+  "resultsFound": "見つかった結果",
+  "tryAnother": "別のタイトルをお試しください"
 }
 }

@@ -56,29 +56,45 @@ const BrowseMoviesPage = () => {
     const fetchFilteredMovies = async () => {
       try {
         setLoading(true);
-        
+
         const response = await fetch(
-          `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=${selectedLanguage}&sort_by=${selectedSort}&include_adult=false&certification_country=US&certification.lte=PG-13&page=1`
+          `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&with_original_language=${selectedLanguage}&sort_by=${selectedSort}&include_adult=false&certification_country=US&certification.lte=PG-13&page=1`,
         );
         const data = await response.json();
-        
+
         const explicitKeywords = [
-          "sex", "nude", "erotic", "nymphomaniac", "sensual", "prison", "magistrate",
-          "intercourse", "prostitute", "orgasm", "desire", "lust", "naked",
-          "エロ", "ポルノ", "官能", "監獄", "熟女", "性" // کلمات کلیدی ژاپنی برای بلاک کردن فیلم‌های خاص قدیمی
+          "sex",
+          "nude",
+          "erotic",
+          "nymphomaniac",
+          "sensual",
+          "prison",
+          "magistrate",
+          "intercourse",
+          "prostitute",
+          "orgasm",
+          "desire",
+          "lust",
+          "naked",
+          "エロ",
+          "ポルノ",
+          "官能",
+          "監獄",
+          "熟女",
+          "性", // کلمات کلیدی ژاپنی برای بلاک کردن فیلم‌های خاص قدیمی
         ];
-        
+
         const safeMovies = (data.results || []).filter((movie: any) => {
           if (movie.adult === true) return false;
           if (!movie.backdrop_path && !movie.poster_path) return false;
-          
+
           const title = (movie.title || movie.name || "").toLowerCase();
           const overview = (movie.overview || "").toLowerCase();
-          
-          const hasExplicitContent = explicitKeywords.some(word => 
-            title.includes(word) || overview.includes(word)
+
+          const hasExplicitContent = explicitKeywords.some(
+            (word) => title.includes(word) || overview.includes(word),
           );
-          
+
           return !hasExplicitContent;
         });
 
@@ -104,24 +120,30 @@ const BrowseMoviesPage = () => {
     <div className="min-h-screen bg-zinc-900 text-white font-sans select-none">
       <HomePageHeader />
       <main className="px-4 md:px-12 py-8 space-y-8">
-        
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 border-b border-zinc-800/60 pb-6 relative z-50">
+        <div className="flex flex-col lg:flex-row md:items-center justify-between gap-4 border-b border-zinc-800/60 pb-6 relative z-30">
           <h1 className="text-2xl md:text-3xl font-extrabold tracking-wide">
             {t("title")}
           </h1>
 
-          <div className="flex flex-wrap items-center gap-6 text-xs md:text-sm">
+          <div className="flex flex-wrap items-center gap-2 md:gap-6 text-xs md:text-sm">
+            <span className="hidden md:block text-zinc-400  mb-1">
+              {t("selectPreferences")}
+            </span>
+
             <div className="flex flex-col gap-1 relative">
-              <span className="text-zinc-400 block mb-1">{t("selectPreferences")}</span>
+              <span className="md:hidden text-zinc-400 block mb-1">
+                {t("selectPreferences")}
+              </span>
               <div
                 onClick={() => {
                   setIsLangOpen(!isLangOpen);
                   setIsSortOpen(false);
                 }}
-                className="bg-black border border-zinc-700 px-4 py-1.5 rounded flex items-center justify-between gap-4 cursor-pointer hover:border-zinc-500 transition text-zinc-200 min-w-[140px]"
+                className="bg-black border border-zinc-700 px-4 py-1.5 rounded flex items-center justify-between gap-4 cursor-pointer hover:border-zinc-500 transition text-zinc-200 md:min-w-35 min-w-30"
               >
                 <span>
-                  {LANGUAGES.find((l) => l.code === selectedLanguage)?.name || t("originalLanguage")}
+                  {LANGUAGES.find((l) => l.code === selectedLanguage)?.name ||
+                    t("originalLanguage")}
                 </span>
                 <ChevronDown
                   size={14}
@@ -149,15 +171,20 @@ const BrowseMoviesPage = () => {
                 </div>
               )}
             </div>
+            <span className="hidden  md:block text-zinc-400 mb-1">
+              {t("sortBy")}
+            </span>
 
             <div className="flex flex-col gap-1 relative ml-auto md:ml-4">
-              <span className="text-zinc-400 block mb-1">{t("sortBy")}</span>
+              <span className="block md:hidden text-zinc-400 mb-1">
+                {t("sortBy")}
+              </span>
               <div
                 onClick={() => {
                   setIsSortOpen(!isSortOpen);
                   setIsLangOpen(false);
                 }}
-                className="bg-black border border-zinc-700 px-4 py-1.5 rounded flex items-center justify-between gap-4 cursor-pointer hover:border-zinc-500 transition text-zinc-200 min-w-[180px]"
+                className="bg-black border border-zinc-700 px-4 py-1.5 rounded flex items-center justify-between gap-4 cursor-pointer hover:border-zinc-500 transition text-zinc-200 md:min-w-45 min-w-20"
               >
                 <span>
                   {SORT_OPTIONS.find((o) => o.value === selectedSort)?.label}

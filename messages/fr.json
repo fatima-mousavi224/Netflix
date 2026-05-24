@@ -187,5 +187,12 @@
   "title": "Bientôt disponible",
   "description": "Nous travaillons dur pour vous proposer cette fonctionnalité.",
   "button": "Retour à l'accueil"
+},
+"Search": {
+  "placeholder": "Titres, personnes, genres",
+  "noResults": "Aucun résultat trouvé pour",
+  "searching": "Recherche en cours...",
+  "resultsFound": "Résultats trouvés",
+  "tryAnother": "Essayez un autre titre"
 }
 }

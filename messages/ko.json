@@ -187,5 +187,12 @@
   "title": "출시 예정",
   "description": "이 기능을 제공하기 위해 최선을 다하고 있습니다.",
   "button": "홈으로 돌아가기"
+},
+"Search": {
+  "placeholder": "제목, 사람, 장르",
+  "noResults": "에 대한 결과가 없습니다",
+  "searching": "검색 중...",
+  "resultsFound": "검색 결과",
+  "tryAnother": "다른 제목으로 시도해 보세요"
 }
 }

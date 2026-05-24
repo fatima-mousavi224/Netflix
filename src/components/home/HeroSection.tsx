@@ -7,10 +7,8 @@ const HeroSection = () => {
     const t = useTranslations("Hero");
   return (
     <main className="relative min-h-screen text-primary-white">
-      {/* پس‌زمینه تاریک شده */}
       <HeroBackground />
       
-      {/* بقیه محتوای صفحه، هدر، متون و دکمه‌ها روی سایه قرار می‌گیرند */}
       <div className="relative z-10 lg:px-40 md:px-20 px-8">
         <LandingPageHeader />
         <div className="md:mt-40 mt-52">

@@ -188,5 +188,12 @@
   "title": "Próximamente",
   "description": "Estamos trabajando duro para ofrecerte esta función.",
   "button": "Volver al inicio"
+},
+"Search": {
+  "placeholder": "Títulos, personas, géneros",
+  "noResults": "No se encontraron resultados para",
+  "searching": "Buscando...",
+  "resultsFound": "Resultados encontrados",
+  "tryAnother": "Prueba con otro título"
 }
 }
