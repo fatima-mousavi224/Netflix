@@ -1,7 +1,10 @@
 allowBuilds:
   '@parcel/watcher': true
+  '@prisma/client': true
+  '@prisma/engines': true
   '@swc/core': true
   msw: true
+  prisma: true
   sharp: set this to true or false
   unrs-resolver: set this to true or false
 ignoredBuiltDependencies:
