@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import {  ChevronDown,Menu, LogOut, Users } from "lucide-react";
+import { ChevronDown, Menu, LogOut, Users } from "lucide-react";
 import Image from "next/image";
 import { Link, usePathname, useRouter } from "@/src/i18n/routing";
 import { useTranslations, useLocale } from "next-intl";
@@ -83,35 +83,37 @@ const HomePageHeader = () => {
                 <span>{activeProfile?.name?.[0] || "U"}</span>
               )}
             </div>
-
             <ChevronDown
               size={15}
               className={`text-grey-10 group-hover:text-primary-white transition-transform duration-200 ${
                 showDropdown ? "rotate-180" : ""
               }`}
             />
-
             {showDropdown && (
-              <div className="z-50 absolute top-full right-0 mt-2 w-44 bg-black/95 border border-grey-800 rounded shadow-xl flex flex-col py-2 text-sm animate-fade-in">
-                <button
-                  onClick={() => router.push("/profiles")}
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-grey-800/50 text-grey-10 hover:text-primary-white transition-colors w-full text-left"
-                >
-                  <Users size={16} />
-                  <span>Switch Profile</span>
-                </button>
+              <div className="z-50 absolute top-full right-0 pt-2 w-44">
+                <div className="bg-black/95 border border-grey-800 rounded shadow-xl flex flex-col py-2 text-sm animate-fade-in">
+                  <button
+                    onClick={() => router.push("/profiles")}
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-grey-800/50 text-grey-10 hover:text-primary-white transition-colors w-full text-left"
+                  >
+                    <Users size={16} />
+                    <span>Switch Profile</span>
+                  </button>
 
-                <div className="border-t border-grey-800 my-1"></div>
+                  <div className="border-t border-grey-800 my-1"></div>
 
-                <button
-                  onClick={() => signOut({ callbackUrl: `/${locale}/signin` })}
-                  className="flex items-center gap-2 px-4 py-2 hover:bg-red-600/20 text-primary-red transition-colors w-full text-left font-medium"
-                >
-                  <LogOut size={16} />
-                  <span>Sign Out</span>
-                </button>
+                  <button
+                    onClick={() =>
+                      signOut({ callbackUrl: `/${locale}/signin` })
+                    }
+                    className="flex items-center gap-2 px-4 py-2 hover:bg-red-600/20 text-primary-red transition-colors w-full text-left font-medium"
+                  >
+                    <LogOut size={16} />
+                    <span>Sign Out</span>
+                  </button>
+                </div>
               </div>
-            )}
+            )}{" "}
           </div>
           <div className="md:hidden block">
             <Sheet>
@@ -165,4 +167,3 @@ const HomePageHeader = () => {
 };
 
 export default HomePageHeader;
-

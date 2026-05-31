@@ -1,3 +1,4 @@
+
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
@@ -8,11 +9,20 @@ import { Inter } from "next/font/google";
 import AuthProvider from "@/src/providers/AuthProvider";
 import { ProfileProvider } from "@/src/context/ProfileContext";
 import { MyListProvider } from "@/src/context/MyListContext";
+import { Metadata } from "next"; 
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
 });
+
+export const metadata: Metadata = {
+  title: "Netflix",
+  description: "Netflix Clone - Watch TV Shows Online, Watch Movies Online",
+  icons: {
+    icon: "/favicon.ico", 
+  },
+};
 
 export default async function LocaleLayout({
   children,
@@ -36,7 +46,6 @@ export default async function LocaleLayout({
         className={`${inter.variable} font-sans bg-black text-white antialiased`}
         suppressHydrationWarning={true}
       >
-        {/* Wrap application inside Auth and Language providers */}
         <AuthProvider>
           <ProfileProvider>
             <NextIntlClientProvider messages={messages}>
