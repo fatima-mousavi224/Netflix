@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
-import { X, Play, Plus, Check, ThumbsUp, ChevronDown } from "lucide-react";
+import { X, Play, Plus, Check, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import { useTranslations } from "next-intl";
 import PlayButton from "@/src/ui/PlayButton";
