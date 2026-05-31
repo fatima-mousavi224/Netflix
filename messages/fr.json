@@ -86,7 +86,18 @@
   "captchaText": "Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot.",
   "learnMore": "En savoir plus.",
   "emailError": "Veuillez saisir une adresse e-mail ou un numéro de téléphone valide.",
-  "passwordError": "Votre mot de passe doit comporter entre 4 et 60 caractères."
+  "passwordError": "Votre mot de passe doit comporter entre 4 et 60 caractères.",
+  "forgotPasswordTitle": "E-mail/Mot de passe oublié",
+  "forgotPasswordDesc": "Nous vous enverrons un e-mail contenant des instructions sur la façon de réinitialiser votre mot de passe.",
+  "sendEmail": "M'envoyer un e-mail",
+  "checkEmailSuccess": "Succès ! Veuillez consulter votre boîte de réception.",
+  "userNotFound": "Aucun compte trouvé avec cette adresse e-mail.",
+  "loading": "Traitement en cours...",
+  "resetPasswordTitle": "Réinitialiser le mot de passe",
+  "newPasswordPlaceholder": "Nouveau mot de passe",
+  "updatePasswordBtn": "Mettre à jour le mot de passe",
+  "resetSuccess": "Succès ! Mot de passe mis à jour. Redirection...",
+  "invalidToken": "Jeton invalide ou expiré."
 },
   "Billboard": {
     "play": "Lecture",

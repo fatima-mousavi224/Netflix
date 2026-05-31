@@ -86,7 +86,18 @@
     "captchaText": "This page is protected by Google reCAPTCHA to ensure you're not a bot.",
     "learnMore": "Learn more.",
     "emailError": "Please enter a valid email or phone number.",
-    "passwordError": "Your password must contain between 4 and 60 characters."
+    "passwordError": "Your password must contain between 4 and 60 characters.",
+    "forgotPasswordTitle": "Forgot Email/Password",
+    "forgotPasswordDesc": "We will send you an email with instructions on how to reset your password.",
+    "sendEmail": "Email Me",
+    "checkEmailSuccess": "Success! Please check your email inbox.",
+    "userNotFound": "No account found with that email address.",
+    "loading": "Processing...",
+    "resetPasswordTitle": "Reset Password",
+    "newPasswordPlaceholder": "New Password",
+    "updatePasswordBtn": "Update Password",
+    "resetSuccess": "Success! Password updated. Redirecting...",
+    "invalidToken": "Invalid or expired token."
   },
 
   "Billboard": {
@@ -185,18 +196,18 @@
     "sendButton": "Send Message"
   },
   "ComingSoon": {
-  "title": "Coming Soon",
-  "description": "We are working hard to bring this feature to you.",
-  "button": "Go Back Home"
-},
-"Search": {
-  "placeholder": "Titles, people, genres",
-  "noResults": "No results found for",
-  "searching": "Searching TMDB...",
-  "resultsFound": "Results found",
-  "tryAnother": "Try another movie title"
-},
-"Signup": {
+    "title": "Coming Soon",
+    "description": "We are working hard to bring this feature to you.",
+    "button": "Go Back Home"
+  },
+  "Search": {
+    "placeholder": "Titles, people, genres",
+    "noResults": "No results found for",
+    "searching": "Searching TMDB...",
+    "resultsFound": "Results found",
+    "tryAnother": "Try another movie title"
+  },
+  "Signup": {
     "title": "Create Account",
     "namePlaceholder": "Full Name",
     "emailPlaceholder": "Email Address",

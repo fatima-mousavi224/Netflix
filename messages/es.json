@@ -86,7 +86,18 @@
   "captchaText": "Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.",
   "learnMore": "Más información.",
   "emailError": "Ingresa un correo electrónico o número de teléfono válido.",
-  "passwordError": "La contraseña debe tener entre 4 y 60 caracteres."
+  "passwordError": "La contraseña debe tener entre 4 y 60 caracteres.",
+  "forgotPasswordTitle": "¿Olvidaste tu correo o contraseña?",
+  "forgotPasswordDesc": "Te enviaremos un correo electrónico con instrucciones sobre cómo restablecer tu contraseña.",
+  "sendEmail": "Enviarme correo",
+  "checkEmailSuccess": "¡Listo! Revisa tu bandeja de entrada.",
+  "userNotFound": "No se encontró ninguna cuenta con ese correo electrónico.",
+  "loading": "Procesando...",
+  "resetPasswordTitle": "Restablecer contraseña",
+  "newPasswordPlaceholder": "Nueva contraseña",
+  "updatePasswordBtn": "Actualizar contraseña",
+  "resetSuccess": "¡Éxito! Contraseña actualizada. Redirigiendo...",
+  "invalidToken": "Token inválido o expirado."
 },
   "Billboard": {
     "play": "Reproducir",

@@ -86,7 +86,18 @@
   "captchaText": "このページはGoogle reCAPTCHAによって保護されており、ロボットでないことを確認しています。",
   "learnMore": "詳細を表示。",
   "emailError": "有効なメールアドレスまたは電話番号を入力してください。",
-  "passwordError": "パスワードは4〜60文字である必要があります。"
+  "passwordError": "パスワードは4〜60文字である必要があります。",
+  "forgotPasswordTitle": "メールアドレス/パスワードをお忘れですか？",
+  "forgotPasswordDesc": "パスワードの再設定方法を記載したメールをお送りします。",
+  "sendEmail": "メールを送信",
+  "checkEmailSuccess": "完了しました。メールの受信トレイを確認してください。",
+  "userNotFound": "そのメールアドレスに関連付けられたアカウントが見つかりません。",
+  "loading": "処理中...",
+  "resetPasswordTitle": "パスワードの再設定",
+  "newPasswordPlaceholder": "新しいパスワード",
+  "updatePasswordBtn": "パスワードを更新",
+  "resetSuccess": "成功しました！パスワードが更新されました。リダイレクト中...",
+  "invalidToken": "トークンが無効であるか、期限が切れています。"
 },
   "Billboard": {
     "play": "再生",

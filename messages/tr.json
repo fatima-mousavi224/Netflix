@@ -86,7 +86,18 @@
   "captchaText": "Bu sayfa, robot olmadığınızı doğrulamak için Google reCAPTCHA tarafından korunmaktadır.",
   "learnMore": "Daha fazla bilgi edinin.",
   "emailError": "Lütfen geçerli bir e-posta adresi veya telefon numarası girin.",
-  "passwordError": "Parolanız 4 ile 60 karakter arasında olmalıdır."
+  "passwordError": "Parolanız 4 ile 60 karakter arasında olmalıdır.",
+  "forgotPasswordTitle": "E-posta/Parola Unutuldu",
+  "forgotPasswordDesc": "Parolanızı nasıl sıfırlayacağınıza dair talimatları içeren bir e-posta göndereceğiz.",
+  "sendEmail": "Bana E-posta Gönder",
+  "checkEmailSuccess": "Başarılı! Lütfen e-posta kutunuzu kontrol edin.",
+  "userNotFound": "Bu e-posta adresiyle eşleşen bir hesap bulunamadı.",
+  "loading": "İşleniyor...",
+  "resetPasswordTitle": "Parolayı Sıfırla",
+  "newPasswordPlaceholder": "Yeni Parola",
+  "updatePasswordBtn": "Parolayı Güncelle",
+  "resetSuccess": "Başarılı! Parola güncellendi. Yönlendiriliyor...",
+  "invalidToken": "Geçersiz veya süresi dolmuş token."
 },
   "Billboard": {
     "play": "Oynat",
