@@ -73,21 +73,21 @@
     "q6": "Netflix est-il adapté aux enfants ?",
     "a6": "L'espace Netflix Jeunesse est inclus dans votre abonnement pour offrir aux parents un contrôle total et permettre aux enfants de regarder des séries et des films en famille dans leur propre espace."
   },
-  "Auth": {
-    "signIn": "Se connecter",
-    "emailOrPhone": "Adresse e-mail ou numéro de téléphone",
-    "password": "Mot de passe",
-    "googleLogin": "Continuer avec Google",
-    "forgot": "Mot de passe oublié ?",
-    "rememberMe": "Se souvenir de moi",
-    "newToNetflix": "Nouveau sur Netflix ?",
-    "signUpNow": "Inscrivez-vous maintenant.",
-    "captchaText": "Cette page est protégée por Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot.",
-    "learnMore": "En savoir plus.",
-    "emailError": "Veuillez saisir une adresse e-mail ou un numéro de téléphone valide.",
-    "passwordError": "Votre mot de passe doit comprendre entre 4 et 60 caractères."
-  },
-
+"Auth": {
+  "signIn": "S'identifier",
+  "invalidLogin": "E-mail ou mot de passe incorrect.",
+  "emailOrPhone": "E-mail ou numéro de téléphone",
+  "password": "Mot de passe",
+  "googleLogin": "Continuer avec Google",
+  "forgot": "Mot de passe oublié ?",
+  "rememberMe": "Se souvenir de moi",
+  "newToNetflix": "Première visite sur Netflix ?",
+  "signUpNow": "Inscrivez-vous.",
+  "captchaText": "Cette page est protégée par Google reCAPTCHA pour s'assurer que vous n'êtes pas un robot.",
+  "learnMore": "En savoir plus.",
+  "emailError": "Veuillez saisir une adresse e-mail ou un numéro de téléphone valide.",
+  "passwordError": "Votre mot de passe doit comporter entre 4 et 60 caractères."
+},
   "Billboard": {
     "play": "Lecture",
     "moreInfo": "Plus d'infos"
@@ -194,5 +194,15 @@
   "searching": "Recherche en cours...",
   "resultsFound": "Résultats trouvés",
   "tryAnother": "Essayez un autre titre"
-}
-}
+},
+
+  "Signup": {
+    "title": "Créer un compte",
+    "namePlaceholder": "Nom complet",
+    "emailPlaceholder": "Adresse e-mail",
+    "passwordPlaceholder": "Mot de passe",
+    "button": "S'inscrire",
+    "pending": "Création du compte...",
+    "alreadyHaveAccount": "Vous avez déjà un compte ?",
+    "signInLink": "S'identifier maintenant."
+}}

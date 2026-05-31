@@ -2,16 +2,15 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 'use server'
 
+import { redirect } from "@/src/i18n/routing";
 import { db } from "@/src/lib/db";
 import bcrypt from "bcryptjs";
-import { redirect } from "next/navigation";
 
 export async function signup(prevState: any, formData: FormData) {
   const name = formData.get("name") as string;
   const email = formData.get("email") as string;
   const password = formData.get("password") as string;
 
-  // 1. Basic Validation
   if (!name || !email || !password) {
     return { message: "Please fill in all fields." };
   }
@@ -21,7 +20,6 @@ export async function signup(prevState: any, formData: FormData) {
   }
 
   try {
-    // 2. Check if user already exists
     const existingUser = await db.user.findUnique({
       where: { email }
     });
@@ -46,6 +44,5 @@ export async function signup(prevState: any, formData: FormData) {
     return { message: "Database error. Please try again later." };
   }
 
-  // 5. Success! Redirect to sign-in
-  redirect("/signin");
+  redirect({ href: "/signin", locale: "en" });
 }

@@ -73,21 +73,21 @@
     "q6": "¿Es Netflix adecuado para los niños?",
     "a6": "La experiencia de Netflix Infantil está incluida en tu membresía para darles el control a los padres mientras los niños disfrutan de series y películas familiares en su propio espacio."
   },
-  "Auth": {
-    "signIn": "Iniciar sesión",
-    "emailOrPhone": "Correo electrónico o número de teléfono",
-    "password": "Contraseña",
-    "googleLogin": "Continuar con Google",
-    "forgot": "¿Olvidaste tu contraseña?",
-    "rememberMe": "Recuérdame",
-    "newToNetflix": "¿Eres nuevo en Netflix?",
-    "signUpNow": "Regístrate ahora.",
-    "captchaText": "Esta página está protegida por Google reCAPTCHA para verificar que no eres un robot.",
-    "learnMore": "Más información.",
-    "emailError": "Introduce un correo electrónico o un número de teléfono válido.",
-    "passwordError": "La contraseña debe tener entre 4 y 60 caracteres."
-  },
-
+"Auth": {
+  "signIn": "Iniciar sesión",
+  "invalidLogin": "Correo electrónico o contraseña incorrectos.",
+  "emailOrPhone": "Correo electrónico o número de teléfono",
+  "password": "Contraseña",
+  "googleLogin": "Continuar con Google",
+  "forgot": "¿Olvidaste tu contraseña?",
+  "rememberMe": "Recuérdame",
+  "newToNetflix": "¿Primera vez en Netflix?",
+  "signUpNow": "Suscríbete ahora.",
+  "captchaText": "Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot.",
+  "learnMore": "Más información.",
+  "emailError": "Ingresa un correo electrónico o número de teléfono válido.",
+  "passwordError": "La contraseña debe tener entre 4 y 60 caracteres."
+},
   "Billboard": {
     "play": "Reproducir",
     "moreInfo": "Más información"
@@ -195,5 +195,15 @@
   "searching": "Buscando...",
   "resultsFound": "Resultados encontrados",
   "tryAnother": "Prueba con otro título"
-}
+},
+"Signup": {
+    "title": "Crear cuenta",
+    "namePlaceholder": "Nombre completo",
+    "emailPlaceholder": "Correo electrónico",
+    "passwordPlaceholder": "Contraseña",
+    "button": "Registrarse",
+    "pending": "Creando cuenta...",
+    "alreadyHaveAccount": "¿Ya tienes una cuenta?",
+    "signInLink": "Inicia sesión ahora."
+  }
 }

@@ -75,6 +75,7 @@
   },
   "Auth": {
     "signIn": "Sign In",
+    "invalidLogin": "Incorrect email or password.",
     "emailOrPhone": "Email or phone number",
     "password": "Password",
     "googleLogin": "Continue with Google",
@@ -194,5 +195,15 @@
   "searching": "Searching TMDB...",
   "resultsFound": "Results found",
   "tryAnother": "Try another movie title"
-}
+},
+"Signup": {
+    "title": "Create Account",
+    "namePlaceholder": "Full Name",
+    "emailPlaceholder": "Email Address",
+    "passwordPlaceholder": "Password",
+    "button": "Sign Up",
+    "pending": "Creating Account...",
+    "alreadyHaveAccount": "Already have an account?",
+    "signInLink": "Sign in now."
+  }
 }

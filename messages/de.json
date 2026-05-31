@@ -73,21 +73,21 @@
     "q6": "Ist Netflix für Kinder geeignet?",
     "a6": "Das Netflix Kids-Erlebnis ist in Ihrer Mitgliedschaft enthalten. So behalten Eltern die Kontrolle, während Kinder familienfreundliche Serien und Filme in einem eigenen Bereich genießen können."
   },
-  "Auth": {
-    "signIn": "Einloggen",
-    "emailOrPhone": "E-Mail-Adresse oder Telefonnummer",
-    "password": "Passwort",
-    "googleLogin": "Weiter mit Google",
-    "forgot": "Passwort vergessen?",
-    "rememberMe": "Zugangsdaten speichern",
-    "newToNetflix": "Neu bei Netflix?",
-    "signUpNow": "Jetzt registrieren.",
-    "captchaText": "Diese Seite wird durch Google reCAPTCHA geschützt, um festzustellen, dass Sie kein Roboter sind.",
-    "learnMore": "Mehr erfahren.",
-    "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse oder Telefonnummer ein.",
-    "passwordError": "Ihr Passwort muss zwischen 4 und 60 Zeichen lang sein."
-  },
-
+"Auth": {
+  "signIn": "Einloggen",
+  "invalidLogin": "E-Mail-Adresse oder Passwort ist falsch.",
+  "emailOrPhone": "E-Mail oder Telefonnummer",
+  "password": "Passwort",
+  "googleLogin": "Weiter mit Google",
+  "forgot": "Passwort vergessen?",
+  "rememberMe": "Eingeloggt bleiben",
+  "newToNetflix": "Neu bei Netflix?",
+  "signUpNow": "Jetzt registrieren.",
+  "captchaText": "Diese Seite wird durch Google reCAPTCHA geschützt, um sicherzustellen, dass Sie kein Bot sind.",
+  "learnMore": "Mehr erfahren.",
+  "emailError": "Bitte geben Sie eine gültige E-Mail-Adresse oder Telefonnummer ein.",
+  "passwordError": "Das Passwort muss zwischen 4 und 60 Zeichen lang sein."
+},
   "Billboard": {
     "play": "Abspielen",
     "moreInfo": "Mehr Infos"
@@ -194,5 +194,15 @@
   "searching": "Suche läuft...",
   "resultsFound": "Gefundene Ergebnisse",
   "tryAnother": "Versuchen Sie es mit einem anderen Titel"
-}
+},
+"Signup": {
+    "title": "Konto erstellen",
+    "namePlaceholder": "Vollständiger Name",
+    "emailPlaceholder": "E-Mail-Adresse",
+    "passwordPlaceholder": "Passwort",
+    "button": "Registrieren",
+    "pending": "Konto wird erstellt...",
+    "alreadyHaveAccount": "Hast du bereits ein Konto?",
+    "signInLink": "Jetzt anmelden."
+  }
 }

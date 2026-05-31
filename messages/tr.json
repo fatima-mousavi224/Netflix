@@ -73,21 +73,21 @@
     "q6": "Netflix çocuklar için uygun mu?",
     "a6": "Üyeliğinize dahil olan Netflix Çocuk deneyimi, çocuklar kendi alanlarında aile dostu dizilerin ve filmlerin keyfini çıkarırken ebeveynlere kontrol imkanı sağlar."
   },
-  "Auth": {
-    "signIn": "Oturum Aç",
-    "emailOrPhone": "E-posta veya telefon numarası",
-    "password": "Parola",
-    "googleLogin": "Google ile Devam Et",
-    "forgot": "Parolayı mı unuttunuz?",
-    "rememberMe": "Beni hatırla",
-    "newToNetflix": "Netflix'e katılmak ister misiniz?",
-    "signUpNow": "Şimdi kaydolun.",
-    "captchaText": "Bu sayfa, robot olmadığınızı doğrulamak için Google reCAPTCHA tarafından korunmaktadır.",
-    "learnMore": "Daha fazla bilgi edinin.",
-    "emailError": "Lütfen geçerli bir e-posta adresi veya telefon numarası girin.",
-    "passwordError": "Parolanız 4 ila 60 karakter arasında olmalıdır."
-  },
-
+"Auth": {
+  "signIn": "Oturum Aç",
+  "invalidLogin": "E-posta adresi veya parola hatalı.",
+  "emailOrPhone": "E-posta adresi veya telefon numarası",
+  "password": "Parola",
+  "googleLogin": "Google ile Devam Et",
+  "forgot": "Parolanızı mı unuttunuz?",
+  "rememberMe": "Beni hatırla",
+  "newToNetflix": "Netflix'e katılmak ister misiniz?",
+  "signUpNow": "Şimdi kaydolun.",
+  "captchaText": "Bu sayfa, robot olmadığınızı doğrulamak için Google reCAPTCHA tarafından korunmaktadır.",
+  "learnMore": "Daha fazla bilgi edinin.",
+  "emailError": "Lütfen geçerli bir e-posta adresi veya telefon numarası girin.",
+  "passwordError": "Parolanız 4 ile 60 karakter arasında olmalıdır."
+},
   "Billboard": {
     "play": "Oynat",
     "moreInfo": "Daha Fazla Bilgi"
@@ -194,5 +194,16 @@
   "searching": "Aranıyor...",
   "resultsFound": "Bulunan sonuçlar",
   "tryAnother": "Başka bir başlık deneyin"
-}
+},
+
+  "Signup": {
+    "title": "Hesap Oluştur",
+    "namePlaceholder": "Tam İsim",
+    "emailPlaceholder": "E-posta Adresi",
+    "passwordPlaceholder": "Şifre",
+    "button": "Kayıt Ol",
+    "pending": "Hesap Oluşturuluyor...",
+    "alreadyHaveAccount": "Zaten bir hesabınız var mı?",
+    "signInLink": "Şimdi oturum açın."
+  }
 }
