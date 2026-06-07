@@ -31,7 +31,6 @@ const HomePageAcount = () => {
   const [tvShows, setTvShows] = useState<Movie[]>([]);
   const [selectedMovie, setSelectedMovie] = useState<Movie | null>(null);
 
-  // اضافه کردن فیلد id و type به استیت اولیه بیلبورد برای جلوگیری از ارور
   const [billboardMovie, setBillboardMovie] = useState({
     id: "0",
     title: "House of Ninjas",
@@ -190,7 +189,7 @@ const HomePageAcount = () => {
           );
           const firstMovie = trendingP1.results[0];
           setBillboardMovie({
-            id: String(firstMovie.id), 
+            id: String(firstMovie.id),
             title: firstMovie.title || firstMovie.name,
             description: firstMovie.overview,
             backdropUrl:
@@ -246,15 +245,8 @@ const HomePageAcount = () => {
 
   return (
     <div className="min-h-screen bg-black text-white overflow-x-hidden">
-      <MovieBillboard
-        id={billboardMovie.id}
-        title={billboardMovie.title}
-        description={billboardMovie.description}
-        backdropUrl={billboardMovie.backdropUrl}
-        type={billboardMovie.type}
-        onOpenModal={setSelectedMovie} 
-      />
-      
+      <MovieBillboard onOpenModal={setSelectedMovie} />
+
       <div className="-mt-12 md:-mt-28 relative z-30 pb-20 space-y-6 md:space-y-10 bg-linear-to-b from-transparent via-black to-black">
         {trending.length > 0 && (
           <MovieRow
