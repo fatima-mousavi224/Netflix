@@ -8,7 +8,12 @@ import { useTranslations } from "next-intl";
 import PlayButton from "@/src/ui/PlayButton";
 
 interface BillboardProps {
-  onOpenModal: (movie: { id: string; title: string; thumbnailUrl: string; type?: "movie" | "tv" }) => void; 
+  id?: string; 
+  type?: "movie" | "tv";
+  title?: string;
+  description?: string;
+  backdropUrl?: string;
+  onOpenModal: (movie: any) => void; 
 }
 
 const MovieBillboard: React.FC<BillboardProps> = ({ onOpenModal }) => {
@@ -23,17 +28,16 @@ const MovieBillboard: React.FC<BillboardProps> = ({ onOpenModal }) => {
     const fetchMovie = async () => {
       try {
         setLoading(true);
-        // فراخوانی دیتای فیلم از TMDB
         const response = await fetch(
           `https://api.themoviedb.org/3/movie/${MOVIE_ID}?api_key=${API_KEY}&language=en-US`
         );
         
-        if (!response.ok) throw new Error("Movie not found or network error");
+        if (!response.ok) throw new Error("Movie not found");
         
         const data = await response.json();
         setMovie(data);
       } catch (error) {
-        console.error("Error retrieving movie information:", error);
+        console.error("Fetch error:", error);
       } finally {
         setLoading(false);
       }
